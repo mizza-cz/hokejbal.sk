@@ -1,0 +1,27 @@
+.titleDot {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    background: var(--color-stroke);
+    //  inset-block-start: 50%;
+  }
+}
+.h2.titleDot {
+  &::before {
+    width: 12px;
+    height: 12px;
+    inset-inline-end: -28px;
+  }
+}
+.title.titleDot {
+  &::before {
+    width: 10px;
+    height: 10px;
+    inset-inline-end: -26px;
+  }
+}

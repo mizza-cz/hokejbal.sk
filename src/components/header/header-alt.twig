@@ -1,0 +1,77 @@
+<header class="header-alt">
+  <div class="headerTop">
+    <div class="container">
+      <div class="headerTop__inner">
+        <div class="header-tabs">
+          <a href="#" class="header-tabs__link">Hokejbal.sk</a>
+          <a href="#" class="header-tabs__link active">Shbu.sk</a>
+        </div>
+        <a href="#" class="header-sponsor">
+          <img src="images/ico/lasvit.svg" alt="" />
+        </a>
+        <form class="header-search">
+          <button>
+            <img src="images/ico/search.svg" alt="search button" />
+          </button>
+          <input placeholder="Čo hledáte?" type="text" name="headerSearch" />
+        </form>
+        {% include "@components/social/social.twig" %}
+      </div>
+    </div>
+  </div>
+  <div class="headerBottom">
+    <div class="container">
+      <div class="headerBottom__inner">
+        <a href="#" class="header__logo">
+          <img src="images/ico/logo.svg" alt="logo" />
+        </a>
+        <nav class="navbar navbar-expand-lg bg">
+          <div class="d-lg-none d-block mb-8">
+            <form class="header-search">
+              <button>
+                <img src="images/ico/search.svg" alt="search button" />
+              </button>
+              <input
+                placeholder="Čo hledáte?"
+                type="text"
+                name="headerSearch"
+              />
+            </form>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Žiadosti o dotácie</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Školenia a semináre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Povinné dokumenty na stahnutie</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Zápisnice a rozhodnutia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Komise a orgány SHbÚ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt na sekretariát</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-none d-flex mt-8 justify-content-center">
+            {% include "@components/social/social.twig" %}
+          </div>
+        </nav>
+
+        <button class="c-header__opener js-header__opener" type="button">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

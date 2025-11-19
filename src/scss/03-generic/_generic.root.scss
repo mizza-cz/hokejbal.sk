@@ -1,0 +1,24 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #000;
+  --color-stroke: #fa5f00;
+  --color-accent: #003ab4;
+  --color-brand: #0052cc;
+
+  --color-bg-secondary: #e2e8e9;
+
+  --color-text-primary: #040404;
+  --color-text-secondary: #4a6b6d;
+  --color-text-inverse: #e6e6dc;
+
+  --font-body: "Manrope", sans-serif;
+  --font-display: "Barlow Condensed", sans-serif;
+
+  --gradient-gray: linear-gradient(
+    101.54deg,
+    #e6e6dc -3.68%,
+    rgba(255, 255, 255, 0.1) 46.89%,
+    rgba(255, 255, 255, 0.190564) 77.51%,
+    #e6e6dc 115.46%
+  );
+}

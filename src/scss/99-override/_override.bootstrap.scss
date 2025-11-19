@@ -1,0 +1,53 @@
+/*! purgecss start ignore */
+
+.text-white {
+  color: var(--color-light) !important;
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-black {
+  color: var(--color-dark) !important;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-inverse {
+  color: var(--color-text-inverse) !important;
+}
+.text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+.bg-gradient {
+  background: var(--bg-gradient) !important;
+}
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+.bg-secondary {
+  background: var(--color-bg-secondary) !important;
+}
+.hover-outline,
+.hover-outline a {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+.start-16 {
+  left: 16px;
+}
+.bottom-16 {
+  bottom: 16px;
+}
+.rounded-16 {
+  border-radius: 16px;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.font-italic {
+  font-style: italic;
+}
+
+/*! purgecss end ignore */

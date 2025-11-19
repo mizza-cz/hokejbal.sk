@@ -1,0 +1,176 @@
+<header class="header">
+  <div class="headerTop">
+    <div class="container">
+      <div class="headerTop__inner">
+        <div class="header-tabs">
+          <a href="#" class="header-tabs__link active">Hokejbal.sk</a>
+          <a href="#" class="header-tabs__link">Shbu.sk</a>
+        </div>
+        <a href="#" class="header-sponsor">
+          <img src="images/ico/lasvit.svg" alt="" />
+        </a>
+        <form class="header-search">
+          <button>
+            <img src="images/ico/search.svg" alt="search button" />
+          </button>
+          <input placeholder="Čo hledáte?" type="text" name="headerSearch" />
+        </form>
+        {% include "@components/social/social.twig" %}
+      </div>
+    </div>
+  </div>
+  <div class="headerBottom">
+    <div class="container">
+      <div class="headerBottom__inner">
+        <a href="#" class="header__logo">
+          <img src="images/ico/logo.svg" alt="logo" />
+        </a>
+        <nav class="navbar navbar-expand-lg">
+          {#
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          #}
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false"
+                >
+                  Novinky
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Novinky 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Novinky 2 </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Novinky 3</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Súťaže</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Poháre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false"
+                >
+                  Turnaje
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Turnaje 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Turnaje 2 </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Turnaje 3</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reprezentácia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Šťatistiky</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rozhodcovia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sieň slávy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partneri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O nás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakty</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="#" class="header-shop">E-shop</a>
+      </div>
+    </div>
+  </div>
+</header>

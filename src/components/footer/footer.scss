@@ -1,0 +1,50 @@
+.footer {
+  padding: 60px 0;
+  background: var(--color-accent);
+  &-bottom {
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(#fff, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+  &__logo {
+    width: 214px;
+    height: 40px;
+    margin-bottom: 32px;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__brand {
+    min-width: fit-content;
+  }
+  &-nav {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      gap: 24px 40px;
+    }
+  }
+  &-nav__col {
+    @include media-breakpoint-only(sm) {
+      flex: 0 0 50%;
+      max-width: calc(50% - 40px);
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}
