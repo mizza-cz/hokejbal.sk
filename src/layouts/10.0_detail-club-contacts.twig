@@ -1,0 +1,88 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "10.0_detail-club-contacts" %} {% block main %}
+
+<div class="container">
+  <div class="headerPage">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Current page</li>
+      </ol>
+    </nav>
+    <img
+      class="object-fit-contain mb-4"
+      width="48"
+      height="48"
+      src="images/ico/slovan-bratislava.svg"
+      alt="club logo"
+    />
+    <h1 class="h2 titleDot text-center">HBT Slovan Bratislava</h1>
+  </div>
+  <div
+    class="my-lg-8 my-6 font-title text-stroke text-sm-semibold font-italic text-uppercase text-center"
+  >
+    Extraliga hokejbalu – základní část
+  </div>
+  <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+    <a
+      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+      href="#"
+    >
+      Přehled
+    </a>
+    <a
+      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+      href="#"
+    >
+      Zápasy
+    </a>
+    <a
+      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+      href="#"
+    >
+      Soupiska
+    </a>
+    <a
+      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+      href="#"
+    >
+      Statistiky
+    </a>
+    <a
+      class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+      href="#"
+    >
+      Kontakty
+    </a>
+  </div>
+
+  <div
+    class="mb-4 d-flex justify-content-between align-items-center gap-4 flex-wrap"
+  >
+    <div class="d-flex gap-2">
+      <a href="#" class="switchItem active"> Všechny </a>
+      <a href="#" class="switchItem">Budouci </a>
+      <a href="#" class="switchItem"> Minule</a>
+    </div>
+    <form class="submitForm w-sm-auto w-100">
+      <select class="js-select" id="year" name="year">
+        <option>2025/26</option>
+        <option>2024/25</option>
+        <option>2023/24</option>
+        <option>2022/23</option>
+        <option>2021/22</option>
+      </select>
+    </form>
+  </div>
+  <div class="d-flex gap-2 mb-8 flex-wrap">
+    <a href="#" class="switchItem active"> Všechny fáze </a>
+    <a href="#" class="switchItem">Tipsport extraliga </a>
+    <a href="#" class="switchItem"> Tipsport extraliga – play-off</a>
+    <a href="#" class="switchItem"> Liga mistrů</a>
+    <a href="#" class="switchItem"> Přátelské zápasy</a>
+  </div>
+</div>
+
+{% endblock %}
