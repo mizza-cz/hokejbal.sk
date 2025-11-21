@@ -21,4 +21,10 @@
     rgba(255, 255, 255, 0.190564) 77.51%,
     #e6e6dc 115.46%
   );
+
+  --bs-border-style: solid;
+  --bs-border-width: 1px;
+  --bs-border-color: #e6e6dc;
+  --bs-primary-rgb: var(--color-accent);
+  --bs-white-rgb: var(--color-light) !important;
 }

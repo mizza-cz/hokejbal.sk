@@ -1,27 +1,37 @@
 .titleDot {
   position: relative;
-  width: fit-content;
-  display: flex;
+  display: inline-block;
   align-items: center;
-  &::before {
+  &::after {
     content: "";
-    position: absolute;
     border-radius: 100%;
     background: var(--color-stroke);
-    //  inset-block-start: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
   }
 }
 .h2.titleDot {
-  &::before {
+  &::after {
     width: 12px;
     height: 12px;
-    inset-inline-end: -28px;
+    min-width: 12px;
+    @include media-breakpoint-down(lg) {
+      width: 10px;
+      height: 10px;
+      min-width: 10px;
+    }
   }
 }
 .title.titleDot {
-  &::before {
+  &::after {
     width: 10px;
     height: 10px;
-    inset-inline-end: -26px;
+    min-width: 10px;
+    @include media-breakpoint-down(lg) {
+      width: 8px;
+      height: 8px;
+      min-width: 8px;
+    }
   }
 }

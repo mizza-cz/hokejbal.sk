@@ -18,6 +18,10 @@
 .text-secondary {
   color: var(--color-text-secondary) !important;
 }
+.text-stroke {
+  color: var(--color-stroke) !important;
+}
+
 .bg-gradient {
   background: var(--bg-gradient) !important;
 }
@@ -27,6 +31,7 @@
 .bg-secondary {
   background: var(--color-bg-secondary) !important;
 }
+
 .hover-outline,
 .hover-outline a {
   text-decoration-color: transparent;
@@ -34,6 +39,7 @@
     text-decoration-color: inherit;
   }
 }
+
 .start-16 {
   left: 16px;
 }
@@ -49,5 +55,20 @@
 .font-italic {
   font-style: italic;
 }
-
+.border-white {
+  border-color: var(--color-light) !important;
+}
+.rounded-3 {
+  border-radius: 12px !important;
+}
+.rounded-100 {
+  border-radius: 100%;
+}
+.slim-scroll::-webkit-scrollbar {
+  background: transparent;
+  height: 0;
+}
+.slim-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
 /*! purgecss end ignore */

@@ -27,8 +27,8 @@
   line-height: 62px;
   font-weight: 700;
   @include media-breakpoint-down(lg) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
@@ -107,8 +107,46 @@
   font-weight: 700;
 }
 
-// text 4xl
+// text LG
+.text-lg-regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.text-lg-medium {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.text-lg-semibold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
 
+.text-xl-regular {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-2xl-regular {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+  font-weight: 400;
+}
+.text-2xl-medium {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+}
+.text-2xl-semibold {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+}
 // text 5xl
 .text-bold-5xl {
   font-weight: 700;

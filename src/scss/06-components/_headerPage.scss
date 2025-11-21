@@ -1,0 +1,29 @@
+.headerPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  width: 100%;
+  min-height: 12rem;
+  margin-bottom: 1rem;
+  @include media-breakpoint-down(lg) {
+    padding-top: 32px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 232px;
+    height: 189px;
+    z-index: -1;
+    background: no-repeat center/contain url("../images/ico/header-page.svg");
+    @include media-breakpoint-down(lg) {
+      width: 200px;
+      height: 170px;
+    }
+  }
+}
