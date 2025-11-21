@@ -1,61 +1,190 @@
 {% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
 set title = "10.0_detail-club-contacts" %} {% block main %}
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Current page
+          </li>
+        </ol>
+      </nav>
+      <img
+        class="object-fit-contain mb-4"
+        width="48"
+        height="48"
+        src="images/ico/slovan-bratislava.svg"
+        alt="club logo"
+      />
+      <h1 class="h2 titleDot text-center">HBT Slovan Bratislava</h1>
+    </div>
 
-<div class="container">
-  <div class="headerPage">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Home</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Current page</li>
-      </ol>
-    </nav>
-    <img
-      class="object-fit-contain mb-4"
-      width="48"
-      height="48"
-      src="images/ico/slovan-bratislava.svg"
-      alt="club logo"
-    />
-    <h1 class="h2 titleDot text-center">HBT Slovan Bratislava</h1>
-  </div>
-  <div
-    class="my-lg-8 my-6 font-title text-stroke text-sm-semibold font-italic text-uppercase text-center"
-  >
-    Extraliga hokejbalu – základní část
-  </div>
-  <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/06.0_detail-club-overview.html"
+    <div
+      class="my-lg-8 my-6 font-title text-stroke text-sm-semibold font-italic text-uppercase text-center"
     >
-      Přehled
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/07.0_detail-club-matches.html"
-    >
-      Zápasy
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/08.0_detail-club-players.html"
-    >
-      Soupiska
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/09.0_detail-club-statistics.html"
-    >
-      Statistiky
-    </a>
-    <a
-      class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/10.0_detail-club-contacts.html"
-    >
-      Kontakty
-    </a>
+      Extraliga hokejbalu – základní část
+    </div>
+
+    <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/06.0_detail-club-overview.html"
+      >
+        Přehled
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/07.0_detail-club-matches.html"
+      >
+        Zápasy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/08.0_detail-club-players.html"
+      >
+        Soupiska
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/09.0_detail-club-statistics.html"
+      >
+        Statistiky
+      </a>
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/10.0_detail-club-contacts.html"
+      >
+        Kontakty
+      </a>
+    </div>
+
+    <h2 class="title titleDot text-accent mb-lg-6 mb-4">Základní udaje</h2>
+    <div class="row g-6">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-flex flex-column justify-content-between h-100 gap-4"
+        >
+          <img
+            width="48"
+            height="48"
+            class="object-fit-contain"
+            src="images/ico/slovan-bratislava.svg"
+            alt="logo"
+          />
+          <div class="d-grid gap-4 mt-auto">
+            <div class="h6 font-title">HBT Slovan Bratislava</div>
+            <div class="text-secondary text-sm-regular">Název klubu</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-flex flex-column justify-content-between h-100 gap-4"
+        >
+          <img
+            width="104"
+            height="48"
+            class="object-fit-contain"
+            src="images/ico/logo.svg"
+            alt="logo"
+          />
+          <div class="d-grid gap-4 mt-auto">
+            <div class="h6 font-title">Extraliga hokejbalu – Základní část</div>
+            <div class="text-secondary text-sm-regular">Aktuální soutěž</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-flex flex-column justify-content-between h-100 gap-4"
+        >
+          <div class="d-grid gap-4 mt-auto">
+            <a
+              href="mailto:slovanbratislava.sk"
+              class="h6 font-title hover-outline"
+              >slovanbratislava.sk</a
+            >
+            <div class="text-secondary text-sm-regular">Web</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 class="title titleDot text-accent mb-lg-6 mb-4">Kontaktni udaje</h2>
+    <div class="row g-6">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <div class="h6 font-title">Tomáš Komár</div>
+          <div class="text-secondary text-sm-regular">Osloveni</div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <div class="h6 font-title">Bratislavska 123</div>
+          <div class="text-secondary text-sm-regular">Ulice a čp</div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <div class="h6 font-title">Bratislava, 422 56</div>
+          <div class="text-secondary text-sm-regular">Město</div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <a href="tel:+421456456456" class="h6 font-title hover-outline">
+            +421 456 456 456
+          </a>
+          <div class="text-secondary text-sm-regular">Telefon</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 class="title titleDot text-accent mb-lg-6 mb-4">Trenér</h2>
+    <div class="row g-6">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <div class="h6 font-title">Jaroslav Novotný</div>
+          <div class="text-secondary text-sm-regular">Jméno</div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <a href="tel:+421456456456" class="h6 font-title hover-outline">
+            +421 456 456 456
+          </a>
+          <div class="text-secondary text-sm-regular">Telefon</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 class="title titleDot text-accent mb-lg-6 mb-4">Vedoucí tímu</h2>
+    <div class="row g-6">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <div class="h6 font-title">Jaroslav Novotný</div>
+          <div class="text-secondary text-sm-regular">Jméno</div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-4">
+          <a href="tel:+421456456456" class="h6 font-title hover-outline">
+            +421 456 456 456
+          </a>
+          <div class="text-secondary text-sm-regular">Telefon</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

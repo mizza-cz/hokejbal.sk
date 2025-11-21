@@ -12,6 +12,7 @@
     position: relative;
     width: 64px;
     height: 64px;
+    min-width: 64px;
     border-radius: 100%;
     border: 3px solid var(--color-stroke);
     background: var(--color-bg-secondary);

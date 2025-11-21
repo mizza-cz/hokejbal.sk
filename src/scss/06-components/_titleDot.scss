@@ -9,6 +9,9 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 16px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 12px;
+    }
   }
 }
 .h2.titleDot {
@@ -24,10 +27,12 @@
   }
 }
 .title.titleDot {
+  line-height: 100%;
   &::after {
     width: 10px;
     height: 10px;
     min-width: 10px;
+    margin-bottom: 4px;
     @include media-breakpoint-down(lg) {
       width: 8px;
       height: 8px;
