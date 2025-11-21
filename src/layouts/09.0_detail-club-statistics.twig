@@ -1,87 +1,283 @@
 {% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
 set title = "09.0_detail-club-statistics" %} {% block main %}
 
-<div class="container">
-  <div class="headerPage">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Home</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Current page</li>
-      </ol>
-    </nav>
-    <img
-      class="object-fit-contain mb-4"
-      width="48"
-      height="48"
-      src="images/ico/slovan-bratislava.svg"
-      alt="club logo"
-    />
-    <h1 class="h2 titleDot text-center">HBT Slovan Bratislava</h1>
-  </div>
-  <div
-    class="my-lg-8 my-6 font-title text-stroke text-sm-semibold font-italic text-uppercase text-center"
-  >
-    Extraliga hokejbalu – základní část
-  </div>
-  <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/06.0_detail-club-overview.html"
-    >
-      Přehled
-    </a>
-    <a
-      class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/07.0_detail-club-matches.html"
-    >
-      Zápasy
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/08.0_detail-club-players.html"
-    >
-      Soupiska
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/09.0_detail-club-statistics.html"
-    >
-      Statistiky
-    </a>
-    <a
-      class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
-      href="https://mizza-cz.github.io/hokejbal.sk/build/10.0_detail-club-contacts.html"
-    >
-      Kontakty
-    </a>
-  </div>
-
-  <div
-    class="mb-4 d-flex justify-content-between align-items-center gap-4 flex-wrap"
-  >
-    <div class="d-flex gap-2">
-      <a href="#" class="switchItem active"> Všechny </a>
-      <a href="#" class="switchItem">Budouci </a>
-      <a href="#" class="switchItem"> Minule</a>
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Current page
+          </li>
+        </ol>
+      </nav>
+      <img
+        class="object-fit-contain mb-4"
+        width="48"
+        height="48"
+        src="images/ico/slovan-bratislava.svg"
+        alt="club logo"
+      />
+      <h1 class="h2 titleDot text-center">HBT Slovan Bratislava</h1>
     </div>
-    <form class="submitForm w-sm-auto w-100">
-      <select class="js-select" id="year" name="year">
-        <option>2025/26</option>
-        <option>2024/25</option>
-        <option>2023/24</option>
-        <option>2022/23</option>
-        <option>2021/22</option>
-      </select>
-    </form>
-  </div>
-  <div class="d-flex gap-2 mb-8 flex-wrap">
-    <a href="#" class="switchItem active"> Všechny fáze </a>
-    <a href="#" class="switchItem">Tipsport extraliga </a>
-    <a href="#" class="switchItem"> Tipsport extraliga – play-off</a>
-    <a href="#" class="switchItem"> Liga mistrů</a>
-    <a href="#" class="switchItem"> Přátelské zápasy</a>
+    <div
+      class="my-lg-8 my-6 font-title text-stroke text-sm-semibold font-italic text-uppercase text-center"
+    >
+      Extraliga hokejbalu – základní část
+    </div>
+    <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/06.0_detail-club-overview.html"
+      >
+        Přehled
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/07.0_detail-club-matches.html"
+      >
+        Zápasy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/08.0_detail-club-players.html"
+      >
+        Soupiska
+      </a>
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/09.0_detail-club-statistics.html"
+      >
+        Statistiky
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/10.0_detail-club-contacts.html"
+      >
+        Kontakty
+      </a>
+    </div>
+
+    <div
+      class="mb-7 d-flex justify-content-between align-items-center gap-4 flex-wrap"
+    >
+      <div class="d-flex gap-2">
+        <a href="#" class="switchItem active"> Všechny fáze </a>
+        <a href="#" class="switchItem">Tipsport extraliga </a>
+        <a href="#" class="switchItem"> Tipsport extraliga – play-off</a>
+        <a href="#" class="switchItem"> Liga mistrů</a>
+        <a href="#" class="switchItem"> Přátelské zápasy</a>
+      </div>
+      <form class="submitForm w-sm-auto w-100">
+        <select class="js-select" id="year" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="title titleDot text-accent mb-lg-6 mb-4">Brankari</h2>
+      <div class="table-responsive">
+        <table class="table-stats">
+          <colgroup>
+            <col style="width: 56px" />
+            <col />
+            <col style="width: 56px" />
+            <col style="width: 56px" />
+            <col style="width: 56px" />
+            <col style="width: 56px" />
+            <col style="width: 56px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Jméno</th>
+              <th>Min</th>
+              <th>Ink</th>
+              <th>Zás</th>
+              <th>A</th>
+              <th>TM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-stroke text-xl-semibold text-title">30</td>
+              <td class="text-md-bold text-accent">
+                <a
+                  class="hover-outline d-flex align-items-center gap-4"
+                  href="#"
+                >
+                  <img
+                    class="rounded-100 object-fit-cover"
+                    width="40"
+                    height="40"
+                    src="images/content/ava.png"
+                    alt="avatar"
+                  />
+                  Jan Novák</a
+                >
+              </td>
+              <td>54</td>
+              <td>1</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td class="text-stroke text-xl-semibold text-title">45</td>
+              <td class="text-md-bold text-accent">
+                <a
+                  class="hover-outline d-flex align-items-center gap-4"
+                  href="#"
+                >
+                  <img
+                    class="rounded-100 object-fit-cover"
+                    width="40"
+                    height="40"
+                    src="images/content/ava.png"
+                    alt="avatar"
+                  />
+                  Jan Novák</a
+                >
+              </td>
+              <td>32</td>
+              <td>3</td>
+              <td>12</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="text-stroke text-xl-semibold text-title">28</td>
+              <td class="text-md-bold text-accent">
+                <a
+                  class="hover-outline d-flex align-items-center gap-4"
+                  href="#"
+                >
+                  <img
+                    class="rounded-100 object-fit-cover"
+                    width="40"
+                    height="40"
+                    src="images/content/ava.png"
+                    alt="avatar"
+                  />
+                  Jan Novák</a
+                >
+              </td>
+              <td>47</td>
+              <td>2</td>
+              <td>15</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h2 class="title titleDot text-accent mb-lg-6 mb-4">hraci v poli</h2>
+    <div class="table-responsive">
+      <table class="table-stats">
+        <colgroup>
+          <col style="width: 56px" />
+          <col />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jméno</th>
+            <th>P</th>
+            <th>Z</th>
+            <th>G</th>
+            <th>A</th>
+            <th>B</th>
+            <th>TM</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for i in 1..4 %}
+          <tr>
+            <td class="text-stroke text-xl-semibold text-title">30</td>
+            <td class="text-md-bold text-accent">
+              <a class="hover-outline d-flex align-items-center gap-4" href="#">
+                <img
+                  class="rounded-100 object-fit-cover"
+                  width="40"
+                  height="40"
+                  src="images/content/ava.png"
+                  alt="avatar"
+                />
+                Jan Novák
+              </a>
+            </td>
+            <td>U</td>
+            <td>53</td>
+            <td>21</td>
+            <td>19</td>
+            <td>40</td>
+            <td>14</td>
+          </tr>
+
+          <tr>
+            <td class="text-stroke text-xl-semibold text-title">18</td>
+            <td class="text-md-bold text-accent">
+              <a class="hover-outline d-flex align-items-center gap-4" href="#">
+                <img
+                  class="rounded-100 object-fit-cover"
+                  width="40"
+                  height="40"
+                  src="images/content/ava.png"
+                  alt="avatar"
+                />
+                Jakub Šimek
+              </a>
+            </td>
+            <td>C</td>
+            <td>49</td>
+            <td>12</td>
+            <td>27</td>
+            <td>39</td>
+            <td>8</td>
+          </tr>
+
+          <tr>
+            <td class="text-stroke text-xl-semibold text-title">77</td>
+            <td class="text-md-bold text-accent">
+              <a class="hover-outline d-flex align-items-center gap-4" href="#">
+                <img
+                  class="rounded-100 object-fit-cover"
+                  width="40"
+                  height="40"
+                  src="images/content/ava.png"
+                  alt="avatar"
+                />
+                Marek Doležal
+              </a>
+            </td>
+            <td>U</td>
+            <td>62</td>
+            <td>30</td>
+            <td>14</td>
+            <td>44</td>
+            <td>10</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
