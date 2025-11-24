@@ -1,5 +1,5 @@
 {% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
-set title = "12.0_competition-teams" %} {% block main %}
+set title = "14.0_competition-overview" %} {% block main %}
 <div class="mb-lg-20 mb-10">
   <div class="container">
     <div class="headerPage">
@@ -23,7 +23,7 @@ set title = "12.0_competition-teams" %} {% block main %}
 
     <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
       <a
-        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
         href=""
       >
         Přehled
@@ -35,7 +35,7 @@ set title = "12.0_competition-teams" %} {% block main %}
         Zápasy
       </a>
       <a
-        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
         href="https://mizza-cz.github.io/hokejbal.sk/build/12.0_competition-teams.html"
       >
         Týmy
@@ -52,46 +52,6 @@ set title = "12.0_competition-teams" %} {% block main %}
       >
         Statistiky
       </a>
-    </div>
-
-    <div
-      class="mb-6 d-flex justify-content-between align-items-center gap-4 flex-wrap"
-    >
-      <div class="d-flex gap-2 flex-wrap">
-        <a href="#" class="switchItem active"> Celá sezóna </a>
-        <a href="#" class="switchItem">Základní část </a>
-        <a href="#" class="switchItem"> Play-off</a>
-      </div>
-      <form class="submitForm w-sm-auto w-100">
-        <select class="js-select" id="year" name="year">
-          <option>2025/26</option>
-          <option>2024/25</option>
-          <option>2023/24</option>
-          <option>2022/23</option>
-          <option>2021/22</option>
-        </select>
-      </form>
-    </div>
-
-    <div class="row g-6">
-      {% for i in 1..12 %}
-      <div class="col-xl-3 col-lg-4 col-sm-6">
-        <a
-          href="#"
-          class="bg-secondary p-6 rounded-3 h-100 d-grid gap-4 hover-outline text-accent"
-        >
-          <img
-            width="48"
-            height="48"
-            class="object-fit-contain"
-            src="images/ico/slovan-bratislava.svg"
-            alt="logo"
-          />
-          <div class="h6 font-title">HBT Slovan Bratislava</div>
-        </a>
-      </div>
-
-      {% endfor %}
     </div>
   </div>
 </div>
