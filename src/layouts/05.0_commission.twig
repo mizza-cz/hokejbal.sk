@@ -1,0 +1,211 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "05.0_commission" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container container-sm">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Komise</li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Komise</h1>
+    </div>
+    <div class="o-content mb-lg-14 mb-8">
+      <p>
+        Medzi nimi je aj Christian Badalov, ktorý nám zhrnul obe vystúpenia tímu
+        v novej sezóne. V prvom triumfovali zverenci Jaroslava Šalku na pôde
+        Považskej Bystrici 5:3, v druhom zdolali doma Pruské 7:4. „V Považskej
+        Bystrici to bol veľmi náročný zápas pre obe mužstvá, keďže to bolo prvé
+        kolo a nevedeli sme, ako na tom sme. Ale myslím si, že po nie úplne
+        dobrej príprave sme ho zvládli veľmi slušne a dokázali sme zvíťaziť.“
+      </p>
+      <hr />
+      <h6>Historie</h6>
+      <h5>Hráčska brilancia a vášeň pre hokej</h5>
+      <ul>
+        <li>Na výsadbu tak půjde jeden milion korun</li>
+        <li>Na výsadbu tak půjde</li>
+        <li>Na výsadbu tak půjde jeden milion korun</li>
+        <li>Na výsadbu tak půjde</li>
+        <li>Na výsadbu tak půjde jeden milion korun</li>
+        <li>Na výsadbu tak půjde</li>
+      </ul>
+    </div>
+
+    <h6 class="title titleDot text-accent mb-lg-6 mb-4">Kontakty</h6>
+    <div class="d-grid gap-6 mb-lg-14 mb-8">
+      {% for i in 1..3 %}
+      <div class="bg-secondary p-6 rounded-16 d-grid gap-4 h-100">
+        <div class="text-2xl-bold">Ing. Kateřina Zubíčková</div>
+        <div class="text-secondary text-lg-regular">
+          Jednatel / výkonný ředitel
+        </div>
+        <div
+          class="d-flex align-items-center gap-2 text-lg-regular text-accent hover-outline flex-wrap"
+        >
+          <a href="tel:+421739169479">+421 739 169 479</a>
+          <span class="dot text-stroke">•</span>
+          <a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h6 class="title titleDot text-accent mb-lg-6 mb-4">Dokumenty</h6>
+    <div class="row g-6">
+      {% for i in 1..6 %}
+      <div class="col-lg-4 col-sm-6">
+        <div class="docsItem">
+          <div
+            class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+          >
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Nově pridano
+            </div>
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Smlouvy
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a class="d-block" href="images/ico/file.svg" download>
+              <img
+                src="images/ico/file.svg"
+                width="20 "
+                height="20"
+                class="objec-fit-contain"
+                alt="icon"
+                loading="lazy"
+              />
+            </a>
+            <div class="d-grid gap-1">
+              <a
+                href="images/ico/file.svg"
+                download
+                class="text-sm-medium hover-outline"
+              >
+                Smlouva o poradenství.pdf
+              </a>
+              <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="docsItem">
+          <div
+            class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+          >
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Nově pridano
+            </div>
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Smlouvy
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a class="d-block" href="images/ico/file.svg" download>
+              <img
+                src="images/ico/file.svg"
+                width="20 "
+                height="20"
+                class="objec-fit-contain"
+                alt="icon"
+                loading="lazy"
+              />
+            </a>
+            <div class="d-grid gap-1">
+              <a
+                href="images/ico/file.svg"
+                download
+                class="text-sm-medium hover-outline"
+              >
+                Kupní smlouva.pdf
+              </a>
+              <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="docsItem">
+          <div
+            class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+          >
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Nově pridano
+            </div>
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Smlouvy
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a class="d-block" href="images/ico/file.svg" download>
+              <img
+                src="images/ico/file.svg"
+                width="20 "
+                height="20"
+                class="objec-fit-contain"
+                alt="icon"
+                loading="lazy"
+              />
+            </a>
+            <div class="d-grid gap-1">
+              <a
+                href="images/ico/file.svg"
+                download
+                class="text-sm-medium hover-outline"
+              >
+                Kupní smlouva.pdf
+              </a>
+              <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="docsItem">
+          <div
+            class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+          >
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Nově pridano
+            </div>
+            <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+              Smlouvy
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a class="d-block" href="images/ico/file.svg" download>
+              <img
+                src="images/ico/file.svg"
+                width="20 "
+                height="20"
+                class="objec-fit-contain"
+                alt="icon"
+                loading="lazy"
+              />
+            </a>
+            <div class="d-grid gap-1">
+              <a
+                href="images/ico/file.svg"
+                download
+                class="text-sm-medium hover-outline"
+              >
+                Smlouva o školení zaměstnanců.pdf
+              </a>
+              <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

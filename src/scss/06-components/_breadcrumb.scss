@@ -6,6 +6,7 @@
   position: absolute;
   left: 0;
   top: 8px;
+  z-index: 5;
   @include media-breakpoint-down(lg) {
     top: 0;
   }

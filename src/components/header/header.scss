@@ -1,3 +1,7 @@
+header {
+  position: relative;
+  z-index: 999;
+}
 .header {
   &__logo {
     width: 120px;

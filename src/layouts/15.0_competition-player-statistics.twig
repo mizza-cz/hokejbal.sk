@@ -1,0 +1,159 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "15.0_competition-player-statistics" %} {% block main %}
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Soutěž</li>
+        </ol>
+      </nav>
+      <img
+        class="object-fit-contain mb-4"
+        width="200"
+        height="48"
+        src="images/ico/logo.svg"
+        alt="competition logo"
+      />
+      <h1 class="h2 titleDot text-center">Tipsport extraliga</h1>
+    </div>
+
+    <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/14.0_competition-overview.html"
+      >
+        Přehled
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/11.0_competition-matches.html"
+      >
+        Zápasy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/12.0_competition-teams.html"
+      >
+        Týmy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/13.0_competition-table.html"
+      >
+        Tabulky
+      </a>
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href=""
+      >
+        Statistiky
+      </a>
+    </div>
+
+    <div
+      class="mb-4 d-flex justify-content-between align-items-center gap-4 flex-wrap"
+    >
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="#" class="switchItem active"> Celá sezóna </a>
+        <a href="#" class="switchItem">Základní část </a>
+        <a href="#" class="switchItem"> Play-off</a>
+      </div>
+      <form
+        class="submitForm w-sm-auto w-100 d-flex gap-4 flex-sm-nowrap flex-wrap"
+      >
+        <select class="js-select" id="year" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+    <div class="d-flex gap-2 mb-6 flex-wrap">
+      <a href="#" class="switchItem">Lidri statistik </a>
+      <a href="#" class="switchItem active"> Hráči </a>
+      <a href="#" class="switchItem"> Brankrai </a>
+      <a href="#" class="switchItem"> Týmy </a>
+      <a href="#" class="switchItem"> Vyšší tresty </a>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table-stats">
+        <colgroup>
+          <col style="width: 56px" />
+          <col />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jméno</th>
+            <th>P</th>
+            <th>Z</th>
+            <th>G</th>
+            <th>A</th>
+            <th>B</th>
+            <th>TM</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for i in 1..12 %}
+          <tr>
+            <td class="text-stroke text-xl-semibold text-title">1</td>
+            <td class="text-md-bold text-accent">
+              <div class="d-flex align-items-center gap-4">
+                <a href="#" class="player-img">
+                  <img
+                    class="object-fit-cover"
+                    width="40"
+                    height="40"
+                    src="images/content/ava.png"
+                    alt="avatar"
+                  />
+                  <div class="player-team">
+                    <img
+                      width="16"
+                      height="16"
+                      src="images/ico/slovan-bratislava.svg"
+                      alt="avatar"
+                    />
+                  </div>
+                </a>
+                <div class="">
+                  <a href="#" class="text-md-bold text-accent hover-outline"
+                    >Jan Novák</a
+                  >
+                  <div class="text-xs-bold text-secondary">
+                    Slovan Bratislava
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>U</td>
+            <td>52</td>
+            <td>13</td>
+            <td>93</td>
+            <td>82</td>
+            <td>17</td>
+          </tr>
+
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

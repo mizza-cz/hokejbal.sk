@@ -1,0 +1,64 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "18.0_contacts" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">Kontakty</li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Kontakty</h1>
+    </div>
+    <div class="row g-6 mt-lg-2">
+      {% for i in 1..3 %}
+      <div class="col-lg-4">
+        <div class="contactCard">
+          <img src="images/content/fame.png" alt="photo" loading="lazy" />
+          <div class="contactCard__content">
+            <div class="d-grid gap-2">
+              <div class="text-2xl-bold">Josef Kutěj</div>
+              <div class="text-secondary text-lg-regular">
+                Jednatel / výkonný ředitel
+              </div>
+              <div
+                class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline"
+              >
+                <a href="tel:+421739169479">+421 739 169 479</a>
+                <span class="dot text-stroke">•</span>
+                <a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %} {% for i in 1..7 %}
+      <div class="col-xl-4 col-md-6">
+        <div class="bg-secondary rounded-16 p-6">
+          <div class="d-grid gap-2">
+            <div class="text-2xl-bold">Josef Kutěj</div>
+            <div class="text-secondary text-lg-regular">
+              Jednatel / výkonný ředitel
+            </div>
+            <div
+              class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline"
+            >
+              <a href="tel:+421739169479">+421 739 169 479</a>
+              <span class="dot text-stroke">•</span>
+              <a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

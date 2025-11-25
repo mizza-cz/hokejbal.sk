@@ -1,0 +1,22 @@
+.leaderItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  &-img {
+    border-radius: 100%;
+    position: relative;
+  }
+  &-team {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg-secondary);
+  }
+}

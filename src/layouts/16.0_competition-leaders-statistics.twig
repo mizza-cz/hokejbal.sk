@@ -1,0 +1,515 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "16.0_competition-leaders-statistics" %} {% block main %}
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Soutěž</li>
+        </ol>
+      </nav>
+      <img
+        class="object-fit-contain mb-4"
+        width="200"
+        height="48"
+        src="images/ico/logo.svg"
+        alt="competition logo"
+      />
+      <h1 class="h2 titleDot text-center">Tipsport extraliga</h1>
+    </div>
+
+    <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/14.0_competition-overview.html"
+      >
+        Přehled
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/11.0_competition-matches.html"
+      >
+        Zápasy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/12.0_competition-teams.html"
+      >
+        Týmy
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/13.0_competition-table.html"
+      >
+        Tabulky
+      </a>
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href=""
+      >
+        Statistiky
+      </a>
+    </div>
+
+    <div
+      class="mb-4 d-flex justify-content-between align-items-center gap-4 flex-wrap"
+    >
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="#" class="switchItem active"> Celá sezóna </a>
+        <a href="#" class="switchItem">Základní část </a>
+        <a href="#" class="switchItem"> Play-off</a>
+      </div>
+      <form
+        class="submitForm w-sm-auto w-100 d-flex gap-4 flex-sm-nowrap flex-wrap"
+      >
+        <select class="js-select" id="year" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+    <div class="d-flex gap-2 mb-6 flex-wrap">
+      <a href="#" class="switchItem active">Lidri statistik </a>
+      <a href="#" class="switchItem"> Hráči </a>
+      <a href="#" class="switchItem"> Brankrai </a>
+      <a href="#" class="switchItem"> Týmy </a>
+      <a href="#" class="switchItem"> Vyšší tresty </a>
+    </div>
+
+    <div class="row g-6">
+      <div class="col-xl-3 col-md-6">
+        <div class="p-6 bg-secondary rounded-3">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Kanadské bodování
+          </div>
+          <div class="leaderItem pb-3 mb-3 border-bottom border-white">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="leaderItem-img">
+                <img
+                  class="object-fit-cover"
+                  src="images/content/ava.png"
+                  width="64"
+                  height="64"
+                  alt=""
+                />
+                <div class="leaderItem-team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/ico/slovan-bratislava.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a
+                href="#"
+                class="d-grid text-uppercase font-title hover-outline"
+              >
+                <div class="text-md-semibold text-secondary">Jozef</div>
+                <div class="text-2xl-semibold">Bacovský</div>
+              </a>
+            </div>
+            <div class="font-italic font-title text-accent text-4xl-bold">
+              32
+            </div>
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..4 %}
+            <div class="leaderItem">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="leaderItem-img">
+                  <img
+                    class="object-fit-cover"
+                    src="images/content/ava.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="leaderItem-team">
+                    <img
+                      class="object-fit-contain"
+                      src="images/ico/slovan-bratislava.svg"
+                      width="16"
+                      height="16"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <a href="#" class="text-md-bold text-accent hover-outline"
+                  >Jan Novák</a
+                >
+              </div>
+              <div class="text-md-bold text-accent">20</div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <a href="#" class="btn-light mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="p-6 bg-secondary rounded-3">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Nejlepší strelec
+          </div>
+          <div class="leaderItem pb-3 mb-3 border-bottom border-white">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="leaderItem-img">
+                <img
+                  class="object-fit-cover"
+                  src="images/content/ava.png"
+                  width="64"
+                  height="64"
+                  alt=""
+                />
+                <div class="leaderItem-team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/ico/slovan-bratislava.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a
+                href="#"
+                class="d-grid text-uppercase font-title hover-outline"
+              >
+                <div class="text-md-semibold text-secondary">Jozef</div>
+                <div class="text-2xl-semibold">Bacovský</div>
+              </a>
+            </div>
+            <div class="font-italic font-title text-accent text-4xl-bold">
+              32
+            </div>
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..4 %}
+            <div class="leaderItem">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="leaderItem-img">
+                  <img
+                    class="object-fit-cover"
+                    src="images/content/ava.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="leaderItem-team">
+                    <img
+                      class="object-fit-contain"
+                      src="images/ico/slovan-bratislava.svg"
+                      width="16"
+                      height="16"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <a href="#" class="text-md-bold text-accent hover-outline"
+                  >Jan Novák</a
+                >
+              </div>
+              <div class="text-md-bold text-accent">20</div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <a href="#" class="btn-light mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="p-6 bg-secondary rounded-3">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Nejlepší nahravač
+          </div>
+          <div class="leaderItem pb-3 mb-3 border-bottom border-white">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="leaderItem-img">
+                <img
+                  class="object-fit-cover"
+                  src="images/content/ava.png"
+                  width="64"
+                  height="64"
+                  alt=""
+                />
+                <div class="leaderItem-team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/ico/slovan-bratislava.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a
+                href="#"
+                class="d-grid text-uppercase font-title hover-outline"
+              >
+                <div class="text-md-semibold text-secondary">Jozef</div>
+                <div class="text-2xl-semibold">Bacovský</div>
+              </a>
+            </div>
+            <div class="font-italic font-title text-accent text-4xl-bold">
+              32
+            </div>
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..4 %}
+            <div class="leaderItem">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="leaderItem-img">
+                  <img
+                    class="object-fit-cover"
+                    src="images/content/ava.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="leaderItem-team">
+                    <img
+                      class="object-fit-contain"
+                      src="images/ico/slovan-bratislava.svg"
+                      width="16"
+                      height="16"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <a href="#" class="text-md-bold text-accent hover-outline"
+                  >Jan Novák</a
+                >
+              </div>
+              <div class="text-md-bold text-accent">20</div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <a href="#" class="btn-light mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="p-6 bg-secondary rounded-3">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Průměr ink branek na zápas
+          </div>
+          <div class="leaderItem pb-3 mb-3 border-bottom border-white">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="leaderItem-img">
+                <img
+                  class="object-fit-cover"
+                  src="images/content/ava.png"
+                  width="64"
+                  height="64"
+                  alt=""
+                />
+                <div class="leaderItem-team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/ico/slovan-bratislava.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a
+                href="#"
+                class="d-grid text-uppercase font-title hover-outline"
+              >
+                <div class="text-md-semibold text-secondary">Jozef</div>
+                <div class="text-2xl-semibold">Bacovský</div>
+              </a>
+            </div>
+            <div class="font-italic font-title text-accent text-4xl-bold">
+              32
+            </div>
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..4 %}
+            <div class="leaderItem">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="leaderItem-img">
+                  <img
+                    class="object-fit-cover"
+                    src="images/content/ava.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="leaderItem-team">
+                    <img
+                      class="object-fit-contain"
+                      src="images/ico/slovan-bratislava.svg"
+                      width="16"
+                      height="16"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <a href="#" class="text-md-bold text-accent hover-outline"
+                  >Jan Novák</a
+                >
+              </div>
+              <div class="text-md-bold text-accent">20</div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <a href="#" class="btn-light mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row g-6">
+      <div class="col-xl-3 col-md-6">
+        <div class="px-6">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Nejvíce gólů
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..5 %}
+            <div class="d-flex gap-4 align-items-center">
+              <a
+                href="#"
+                class="d-flex gap-4 align-items-center w-100 hover-outline"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 bg-secondary rounded-100"
+                >
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    loading="lazy"
+                    alt="team"
+                  />
+                </div>
+                <div class="text-md-bold text-accent">Slovan Bratislava</div>
+              </a>
+              <div class="text-md-bold text-accent">47</div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <a href="#" class="btn-primary mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="px-6">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Nejvíce výher
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..5 %}
+            <div class="d-flex gap-4 align-items-center">
+              <a
+                href="#"
+                class="d-flex gap-4 align-items-center w-100 hover-outline"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 bg-secondary rounded-100"
+                >
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    loading="lazy"
+                    alt="team"
+                  />
+                </div>
+                <div class="text-md-bold text-accent">Slovan Bratislava</div>
+              </a>
+              <div class="text-md-bold text-accent">47</div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <a href="#" class="btn-primary mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="px-6">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Góly na zápas
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..5 %}
+            <div class="d-flex gap-4 align-items-center">
+              <a
+                href="#"
+                class="d-flex gap-4 align-items-center w-100 hover-outline"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 bg-secondary rounded-100"
+                >
+                  <img
+                    src="images/content/clubs/rytiri.jpg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    loading="lazy"
+                    alt="team"
+                  />
+                </div>
+                <div class="text-md-bold text-accent">Slovan Bratislava</div>
+              </a>
+              <div class="text-md-bold text-accent">47</div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <a href="#" class="btn-primary mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="px-6">
+          <div class="text-2xl-semibold text-accent mb-5 font-title">
+            Slušnost
+          </div>
+          <div class="d-grid gap-3">
+            {% for i in 1..5 %}
+            <div class="d-flex gap-4 align-items-center">
+              <a
+                href="#"
+                class="d-flex gap-4 align-items-center w-100 hover-outline"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 bg-secondary rounded-100"
+                >
+                  <img
+                    src="images/content/clubs/kosice.jpg"
+                    width="24"
+                    height="24"
+                    class="object-fit-contain"
+                    loading="lazy"
+                    alt="team"
+                  />
+                </div>
+                <div class="text-md-bold text-accent">Slovan Bratislava</div>
+              </a>
+              <div class="text-md-bold text-accent">47</div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <a href="#" class="btn-primary mt-6 w-100"> Zobrazit více </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

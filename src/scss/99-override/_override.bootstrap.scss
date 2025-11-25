@@ -46,9 +46,7 @@
 .bottom-16 {
   bottom: 16px;
 }
-.rounded-16 {
-  border-radius: 16px;
-}
+
 .z-index-2 {
   z-index: 2;
 }
@@ -58,12 +56,22 @@
 .border-white {
   border-color: var(--color-light) !important;
 }
+.border-inverse {
+  border: 1px solid var(--color-text-inverse);
+}
 .rounded-3 {
   border-radius: 12px !important;
+}
+.rounded-16 {
+  border-radius: 16px;
+}
+.rounded-56 {
+  border-radius: 56px;
 }
 .rounded-100 {
   border-radius: 100%;
 }
+
 .slim-scroll::-webkit-scrollbar {
   background: transparent;
   height: 0;

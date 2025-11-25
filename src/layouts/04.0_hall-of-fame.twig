@@ -1,0 +1,78 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "04.0_hall-of-fame" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Slovan Bratislava</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Síň slávy</li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Síň slávy</h1>
+    </div>
+
+    <div class="d-flex mb-6 border-bottom overflow-scroll slim-scroll pb-0">
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/14.0_competition-overview.html"
+      >
+        Všichni
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/11.0_competition-matches.html"
+      >
+        Trenéři
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/12.0_competition-teams.html"
+      >
+        Rozhodca
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="https://mizza-cz.github.io/hokejbal.sk/build/13.0_competition-table.html"
+      >
+        Funkcionári
+      </a>
+    </div>
+
+    <div class="row g-6">
+      {% for i in 1..12 %}
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <a class="cardFame" href="#">
+          <img
+            src="images/content/fame.png"
+            width="330"
+            height="320"
+            alt="fame"
+            loading="lazy"
+          />
+          <div class="tag">Trenér</div>
+          <div class="cardFame__content">
+            <div class="text-2xl-bold">Josef Kutěj</div>
+            <div
+              class="d-flex align-items-center gap-2 text-lg-regular text-secondary mt-3"
+            >
+              <span class="dot text-stroke">•</span>
+              <div>2025</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
