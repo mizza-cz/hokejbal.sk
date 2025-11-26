@@ -1,0 +1,77 @@
+.heroCards {
+  padding-bottom: 56px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff calc(50% - 56px),
+    #003ab4 calc(50% - 56px),
+    #003ab4 100%
+  );
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff calc(50% - 56px),
+      #003ab4 calc(50% - 56px),
+      #003ab4 100%
+    );
+  }
+
+  &__inner {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    display: flex;
+    width: 432px !important;
+    display: flex !important;
+    height: auto !important;
+  }
+
+  &__btn {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: var(--color-bg-secondary);
+    border: 4px solid var(--color-light);
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__btn.prev {
+    left: 0;
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+  &__btn.next {
+    right: 0;
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+  &__btn.swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .swiper-backface-hidden .swiper-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+}

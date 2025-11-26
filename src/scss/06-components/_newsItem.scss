@@ -1,0 +1,29 @@
+.newsItem {
+  display: grid;
+  gap: 12px;
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.hp-news {
+  .newsItem + .newsItem {
+    padding-top: 24px;
+    margin-top: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 12px;
+      background: var(--color-stroke);
+      width: 54px;
+      height: 1px;
+      @include media-breakpoint-down(md) {
+        left: 0;
+      }
+    }
+  }
+}

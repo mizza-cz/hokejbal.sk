@@ -1,0 +1,25 @@
+.partnersSlider {
+  overflow: visible;
+  .swiper-slide {
+    width: max-content;
+    margin: 0 24px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 184px;
+      height: 128px;
+    }
+    img {
+      object-fit: contain;
+      max-width: 184px;
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+.infinite-scroll-swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}

@@ -1,12 +1,17 @@
 [class^="postCard-"] {
 }
-
-.postCard-md {
+.postCard-md,
+.postCard-high {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  aspect-ratio: 1/1;
   display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+  }
   &:hover {
     img {
       transform: scale(1.05);
@@ -21,12 +26,6 @@
     top: 0;
     left: 0;
     z-index: 2;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
   }
   &__content {
     position: absolute;
@@ -47,4 +46,13 @@
       overflow: hidden;
     }
   }
+}
+.postCard-high {
+  aspect-ratio: 400/600;
+  @include media-breakpoint-down(lg) {
+    aspect-ratio: 320/400;
+  }
+}
+.postCard-md {
+  aspect-ratio: 1/1;
 }
