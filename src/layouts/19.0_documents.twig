@@ -1,0 +1,208 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "19.0_documents" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">Dokumenty</li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Seznam dokumentu</h1>
+    </div>
+
+    <div class="container-sm p-0">
+      <div class="pb-3 border-bottom mb-6">
+        <form
+          class="d-flex flex-wrap align-items-center gap-4 justify-content-center mb-lg-7 mb-4"
+        >
+          <div class="search m-0 mw-100">
+            <button>
+              <img src="images/ico/search-secondary.svg" alt="search button" />
+            </button>
+            <input
+              class="bg-secondary border-inverse text-secondary"
+              placeholder="Čo hledáte?"
+              type="text"
+              name="search"
+            />
+          </div>
+          <div class="w-md-auto w-100">
+            <select class="js-select w-md-auto w-100" id="year" name="year">
+              <option>Kraj</option>
+              <option>Kraj 1</option>
+              <option>Moravskoslezský</option>
+              <option>Kraj 3</option>
+              <option>Kraj 4</option>
+            </select>
+          </div>
+        </form>
+        <a class="active sort" href="#">
+          Abecedně
+          <img
+            class="object-fit-contain"
+            src="images/ico/chevron-down.svg"
+            width="24"
+            height="24"
+            alt="chevron"
+          />
+        </a>
+      </div>
+      <div class="row g-6">
+        {% for i in 1..6 %}
+        <div class="col-md-4 col-sm-6">
+          <div class="docsItem">
+            <div
+              class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+            >
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Nově pridano
+              </div>
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Smlouvy
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a class="d-block" href="images/ico/file.svg" download>
+                <img
+                  src="images/ico/file.svg"
+                  width="20 "
+                  height="20"
+                  class="objec-fit-contain"
+                  alt="icon"
+                  loading="lazy"
+                />
+              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="images/ico/file.svg"
+                  download
+                  class="text-sm-medium hover-outline"
+                >
+                  Smlouva o poradenství.pdf
+                </a>
+                <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="docsItem">
+            <div
+              class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+            >
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Nově pridano
+              </div>
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Smlouvy
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a class="d-block" href="images/ico/file.svg" download>
+                <img
+                  src="images/ico/file.svg"
+                  width="20 "
+                  height="20"
+                  class="objec-fit-contain"
+                  alt="icon"
+                  loading="lazy"
+                />
+              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="images/ico/file.svg"
+                  download
+                  class="text-sm-medium hover-outline"
+                >
+                  Kupní smlouva.pdf
+                </a>
+                <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="docsItem">
+            <div
+              class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+            >
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Nově pridano
+              </div>
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Smlouvy
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a class="d-block" href="images/ico/file.svg" download>
+                <img
+                  src="images/ico/file.svg"
+                  width="20 "
+                  height="20"
+                  class="objec-fit-contain"
+                  alt="icon"
+                  loading="lazy"
+                />
+              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="images/ico/file.svg"
+                  download
+                  class="text-sm-medium hover-outline"
+                >
+                  Kupní smlouva.pdf
+                </a>
+                <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="docsItem">
+            <div
+              class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+            >
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Nově pridano
+              </div>
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Smlouvy
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a class="d-block" href="images/ico/file.svg" download>
+                <img
+                  src="images/ico/file.svg"
+                  width="20 "
+                  height="20"
+                  class="objec-fit-contain"
+                  alt="icon"
+                  loading="lazy"
+                />
+              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="images/ico/file.svg"
+                  download
+                  class="text-sm-medium hover-outline"
+                >
+                  Smlouva o školení zaměstnanců.pdf
+                </a>
+                <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

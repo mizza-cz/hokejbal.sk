@@ -22,6 +22,12 @@
     margin-bottom: 20px;
     letter-spacing: -0.01em;
   }
+  .perex {
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+  }
   ul {
     margin: 20px 0;
     > li {
@@ -44,6 +50,38 @@
         width: 6px;
         height: 6px;
         border-radius: 100%;
+      }
+    }
+  }
+  img {
+    margin: 40px 0;
+    @include media-breakpoint-down(lg) {
+      margin: 24px 0;
+    }
+  }
+  ol {
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    margin: 20px 0;
+    counter-reset: item;
+
+    > li {
+      counter-increment: item;
+      position: relative;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 1rem;
+      }
+      &::before {
+        content: counter(item);
+        color: var(--color-stroke);
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--font-title);
+        margin-right: 8px;
       }
     }
   }
