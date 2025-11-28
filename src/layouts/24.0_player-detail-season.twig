@@ -1,0 +1,254 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "24.0_player-detail-season" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    {% include "@components/player-section/player-section.twig" %}
+    <div
+      class="mb-lg-8 mb-6 d-flex justify-content-between align-items-center gap-4 flex-wrap"
+    >
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="#" class="switchItem active"> Zápasy </a>
+        <a href="#" class="switchItem">Sezóny </a>
+      </div>
+      <form
+        class="submitForm w-sm-auto w-100 d-flex gap-4 flex-sm-nowrap flex-wrap"
+      >
+        <select class="js-select" id="year" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+    <div class="table-responsive">
+      <table class="table-player">
+        <colgroup>
+          <col style="width: 320px" />
+          <col style="width: 280px" />
+          <col />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 60px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Sezóna 2025-2026</th>
+            <th>Tým</th>
+            <th>Post</th>
+            <th>Z</th>
+            <th>G</th>
+            <th>A</th>
+            <th>B</th>
+            <th>PPG</th>
+            <th>SHG</th>
+            <th>PIM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                Tipsport extraliga – play-off
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                Extraliga hokejbalu - Základní část
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                CROSSDOCK Extraliga hokejbalu - Play-Off
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-responsive">
+      <table class="table-player">
+        <colgroup>
+          <col style="width: 320px" />
+          <col style="width: 280px" />
+          <col />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 56px" />
+          <col style="width: 60px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Sezóna 2024-2025</th>
+            <th>Tým</th>
+            <th>Post</th>
+            <th>Z</th>
+            <th>G</th>
+            <th>A</th>
+            <th>B</th>
+            <th>PPG</th>
+            <th>SHG</th>
+            <th>PIM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                Tipsport extraliga – play-off
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                Extraliga hokejbalu - Základní část
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-md-regular hover-outline text-accent" href="#">
+                CROSSDOCK Extraliga hokejbalu - Play-Off
+              </a>
+            </td>
+            <td>
+              <a href="#" class="d-flex align-items-center gap-4 hover-outline">
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/slovan-bratislava.svg"
+                  width="24"
+                  height="24"
+                  alt="team logo"
+                />
+                <div class="text-md-bold">Slovan Bratislava</div>
+              </a>
+            </td>
+            <td>útočník</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>17</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
