@@ -1,0 +1,9 @@
+.match-detail {
+  margin-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 32px;
+  }
+  .table-stats td {
+    border-bottom: 1px solid var(--color-bg-secondary);
+  }
+}
