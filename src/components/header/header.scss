@@ -114,9 +114,6 @@ header {
     }
   }
 }
-
-// headerTop
-
 .headerTop {
   background: var(--color-accent);
   padding: 8px 0;
@@ -135,8 +132,6 @@ header {
     }
   }
 }
-// headerBottom
-
 .headerBottom {
   &__inner {
     position: relative;
@@ -210,7 +205,6 @@ header {
     color: var(--color-stroke);
   }
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -231,7 +225,6 @@ header {
     gap: 1.5rem;
     padding-top: 1.5rem;
   }
-
   a {
     display: block;
     width: 100%;
@@ -264,7 +257,6 @@ header {
     }
   }
 }
-
 @media screen and (min-width: 992px) {
   .dropdown {
     .dropdown-menu {
@@ -304,7 +296,6 @@ header {
   visibility: visible;
   opacity: 1;
 }
-
 .dropdown-menu.show {
   @include media-breakpoint-down(xl) {
     position: relative;
