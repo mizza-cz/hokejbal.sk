@@ -3,9 +3,7 @@ if (sliderPosts) {
   new Swiper(".posts", {
     spaceBetween: 8,
     speed: 1000,
-
     slidesPerView: "auto",
-
     breakpoints: {
       0: {
         slidesPerView: 1,

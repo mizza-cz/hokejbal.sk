@@ -4,7 +4,7 @@ if (heroCards) {
     spaceBetween: 8,
     speed: 1000,
 
-    slidesPerView: "3",
+    slidesPerView: "auto",
     navigation: {
       nextEl: ".heroCards__btn.next",
       prevEl: ".heroCards__btn.prev",
