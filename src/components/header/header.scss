@@ -103,6 +103,11 @@ header {
     align-items: center;
     padding: 0 28px;
     transition: all 0.2s;
+    @include media-breakpoint-down(xl) {
+      position: relative;
+      width: fit-content;
+      margin: 24px auto 0;
+    }
     &:hover {
       border: 1px solid var(--color-stroke);
       color: var(--color-stroke);
@@ -163,11 +168,12 @@ header {
     flex-direction: column;
     background-color: var(--color-accent);
     left: -20px;
-
     height: calc(100vh - 93px);
     gap: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
+    text-align: center;
+    min-height: max-content;
   }
   &-nav {
     display: flex;
@@ -199,8 +205,63 @@ header {
     font-size: 20px;
     line-height: 1.5;
   }
+  &:focus,
   &:hover {
     color: var(--color-stroke);
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 33;
+  width: max-content;
+  background-color: transparent;
+  top: 100%;
+  min-width: 180px;
+  padding: 0px 0px 0px;
+  box-shadow: 0px 0px 20px 0px rgba(16, 24, 40, 0.05);
+  flex-direction: column;
+  padding-top: 8px;
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+    padding-bottom: 0;
+    box-shadow: none;
+    background-color: var(--color-accent);
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    text-decoration-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    padding: 4px 24px;
+    font-family: var(--font-display);
+    border-bottom: 1px solid var(--color-text-secondary);
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      color: var(--color-light);
+      height: auto;
+      background-color: transparent;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border: none;
+    }
+    &:hover {
+      color: var(--color-stroke);
+      background: var(--color-brand);
+      @include media-breakpoint-down(xl) {
+        background: var(--color-accent);
+      }
+    }
   }
 }
 
@@ -226,12 +287,15 @@ header {
     }
   }
   .dropend {
+    position: relative;
     &:hover {
-      & > .dropdown-menu {
+      .dropdown-menu {
         position: absolute;
         top: -0.5rem;
         left: 100%;
         margin-left: 0;
+        visibility: visible;
+        overflow: visible;
       }
     }
   }
@@ -239,4 +303,11 @@ header {
 .is-nav-open .headerBottom .navbar {
   visibility: visible;
   opacity: 1;
+}
+
+.dropdown-menu.show {
+  @include media-breakpoint-down(xl) {
+    position: relative;
+    display: flex;
+  }
 }

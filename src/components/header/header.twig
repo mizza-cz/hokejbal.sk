@@ -9,7 +9,7 @@
         <a href="#" class="header-sponsor">
           <img src="images/ico/lasvit.svg" alt="" />
         </a>
-        <form class="header-search">
+        <form class="search">
           <button>
             <img src="images/ico/search.svg" alt="search button" />
           </button>
@@ -26,19 +26,18 @@
           <img src="images/ico/logo.svg" alt="logo" />
         </a>
         <nav class="navbar navbar-expand-lg">
-          {#
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          #}
+          <div class="d-lg-none d-block mb-8">
+            <form class="search">
+              <button>
+                <img src="images/ico/search.svg" alt="search button" />
+              </button>
+              <input
+                placeholder="Čo hledáte?"
+                type="text"
+                name="headerSearch"
+              />
+            </form>
+          </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -53,21 +52,23 @@
                   Novinky
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Novinky 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Novinky Novinky 1</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Novinky 2 </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Novinky 3</a>
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
+
                   <li class="dropend">
                     <a
                       class="dropdown-item dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
-                      data-bs-auto-close="true"
+                      data-bs-auto-close="outside"
                       aria-expanded="false"
                     >
                       Dropdown link
@@ -84,7 +85,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
+
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
@@ -115,7 +116,7 @@
                   <li>
                     <a class="dropdown-item" href="#">Turnaje 3</a>
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
+
                   <li class="dropend">
                     <a
                       class="dropdown-item dropdown-toggle"
@@ -139,7 +140,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li><hr class="dropdown-divider" /></li>
+
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
@@ -167,9 +168,17 @@
                 <a class="nav-link" href="#">Kontakty</a>
               </li>
             </ul>
+            <div class="d-lg-none d-flex mt-8 justify-content-center">
+              {% include "@components/social/social.twig" %}
+            </div>
+            <a href="#" class="header-shop d-xl-none d-flex">E-shop</a>
           </div>
         </nav>
-        <a href="#" class="header-shop">E-shop</a>
+        <a href="#" class="header-shop d-xl-flex d-none">E-shop</a>
+
+        <button class="c-header__opener js-header__opener" type="button">
+          <span></span>
+        </button>
       </div>
     </div>
   </div>

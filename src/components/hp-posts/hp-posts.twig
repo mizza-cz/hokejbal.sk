@@ -1,0 +1,47 @@
+<div class="hp-posts">
+  <div class="container">
+    <div class="hp-posts__title pb-xxl-14 pb-xl-10 pb-md-8 pb-4">
+      Viete, ze <span class="text-stroke">...</span> ?
+    </div>
+    <div
+      class="swiper hp-posts__slider mt-xl-16 mt-xl-12 mt-lg-10 mt-sm-6 mt-2 mt-md-8 pb-10"
+    >
+      <button class="hp-posts__btn prev" aria-label="Previous">
+        {% include "@images/chevron-down.svg" %}
+      </button>
+      <button class="hp-posts__btn next" aria-label="Previous">
+        {% include "@images/chevron-down.svg" %}
+      </button>
+      <ul
+        role="list"
+        class="swiper-wrapper infinite-scroll-swiper align-items-center"
+      >
+        {% for i in 1..6 %}
+        <li class="swiper-slide">
+          <a class="hp-posts__item" href="#">
+            <img
+              srcset="https://picsum.photos/660/440"
+              alt="post"
+              width="925"
+              height="535"
+              loading="lazy"
+            />
+            <div class="hp-posts__item-content">
+              <div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+                Víťazstvo Michaloviec smerom k semifinálovému derby
+              </div>
+              <p class="text-sm-regular text-inverse d-sm-block d-none">
+                Ve středečním zápase se rozhodlo o dalších semifinalistech.
+                Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+                Košické Lvi, které se po deseti letech nedostaly do semifinále,
+                podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+                Semifinále tak opět přinese vzrušující městské derby.
+              </p>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

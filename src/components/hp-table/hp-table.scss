@@ -1,0 +1,19 @@
+.hp-table {
+  padding: 0 12px;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+  thead {
+    background: var(--color-accent);
+    border-radius: 0;
+  }
+  td {
+    padding: 10px 4px;
+  }
+  td:first-child {
+    padding-left: 0;
+  }
+  td:last-child {
+    padding-right: 0;
+  }
+}

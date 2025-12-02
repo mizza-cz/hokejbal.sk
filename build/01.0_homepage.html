@@ -46,7 +46,7 @@
 						<a href="#" class="header-sponsor">
 							<img src="images/ico/lasvit.svg" alt="" />
 						</a>
-						<form class="header-search">
+						<form class="search">
 							<button>
 								<img src="images/ico/search.svg" alt="search button" />
 							</button>
@@ -89,7 +89,14 @@
 							<img src="images/ico/logo.svg" alt="logo" />
 						</a>
 						<nav class="navbar navbar-expand-lg">
-
+							<div class="d-lg-none d-block mb-8">
+								<form class="search">
+									<button>
+										<img src="images/ico/search.svg" alt="search button" />
+									</button>
+									<input placeholder="Čo hledáte?" type="text" name="headerSearch" />
+								</form>
+							</div>
 							<div class="collapse navbar-collapse" id="navbarNavDropdown">
 								<ul class="navbar-nav">
 									<li class="nav-item dropdown">
@@ -97,18 +104,18 @@
 											Novinky
 										</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="#">Novinky 1</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Novinky Novinky 1</a>
+											</li>
 											<li>
 												<a class="dropdown-item" href="#">Novinky 2 </a>
 											</li>
 											<li>
 												<a class="dropdown-item" href="#">Novinky 3</a>
 											</li>
-											<li>
-												<hr class="dropdown-divider" />
-											</li>
+
 											<li class="dropend">
-												<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+												<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
 													Dropdown link
 												</a>
 												<ul class="dropdown-menu">
@@ -121,9 +128,7 @@
 													</li>
 												</ul>
 											</li>
-											<li>
-												<hr class="dropdown-divider" />
-											</li>
+
 											<li>
 												<a class="dropdown-item" href="#">Something else here</a>
 											</li>
@@ -147,9 +152,7 @@
 											<li>
 												<a class="dropdown-item" href="#">Turnaje 3</a>
 											</li>
-											<li>
-												<hr class="dropdown-divider" />
-											</li>
+
 											<li class="dropend">
 												<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
 													Dropdown link
@@ -164,9 +167,7 @@
 													</li>
 												</ul>
 											</li>
-											<li>
-												<hr class="dropdown-divider" />
-											</li>
+
 											<li>
 												<a class="dropdown-item" href="#">Something else here</a>
 											</li>
@@ -194,15 +195,1651 @@
 										<a class="nav-link" href="#">Kontakty</a>
 									</li>
 								</ul>
+								<div class="d-lg-none d-flex mt-8 justify-content-center">
+									<ul class="social">
+										<li>
+											<a href="#" target="_blank" class="social-item">
+												<img width="17" height="16" src="images/content/facebook.png" alt="facebook" />
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="social-item">
+												<img width="17" height="16" src="images/content/instagram.png" alt="instagram" />
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="social-item">
+												<img width="24" height="16" src="images/content/youtube.png" alt="youtube" />
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="social-item">
+												<img width="17" height="20" src="images/content/tiktok.png" alt="tiktok" />
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="social-item">
+												<img width="24" height="24" src="images/ico/mic.svg" alt="mic" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="header-shop d-xl-none d-flex">E-shop</a>
 							</div>
 						</nav>
-						<a href="#" class="header-shop">E-shop</a>
+						<a href="#" class="header-shop d-xl-flex d-none">E-shop</a>
+
+						<button class="c-header__opener js-header__opener" type="button">
+							<span></span>
+						</button>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			Hello, World! </main>
+			<div class="TopStories">
+				<div class="container">
+					<div class="TopStoriesRow">
+						<!-- Top stories - desktop -->
+						<div class="TopStoriesContent">
+							<!-- Top story #1 - Active state by default -->
+							<section class="TopStory js-topStory" id="TP1">
+								<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" loading="lazy" alt="" />
+								<picture>
+									<source media="(max-width: 992px)" srcset="./img/blank.gif" />
+									<img class="TopStory-img js-topStory-img" srcset="https://picsum.photos/1920/1280" width="1920" height="1280" alt="" loading="lazy" />
+								</picture>
+								<div class="TopStory-content">
+									<div class="d-flex gap-4 align-items-center mb-6">
+										<div class="tag">Reprezentacia</div>
+										<div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+									</div>
+									<h1 class="h3 text-inverse hover-outline mb-6">
+										<a href="#">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</a>
+									</h1>
+									<p class="text-sm-regular text-inverse mb-6">
+										Ve středečním zápase se rozhodlo o dalších semifinalistech.
+										Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+										Košické Lvi, které se po deseti letech nedostaly do semifinále,
+										podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+										Semifinále tak opět přinese vzrušující městské derby.
+									</p>
+									<a class="TopStory-btn" href="#">Více</a>
+								</div>
+							</section>
+							<!-- Top story #2 -->
+							<section class="TopStory js-topStory is-active" id="TP2">
+								<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" loading="lazy" width="150" height="100" alt="" />
+								<picture>
+									<source media="(max-width: 992px)" srcset="./img/blank.gif" />
+
+									<img class="TopStory-img js-topStory-img" srcset="https://picsum.photos/1921/1280" width="1920" height="1280" alt="" loading="lazy" />
+								</picture>
+								<div class="TopStory-content">
+									<div class="d-flex gap-4 align-items-center mb-6">
+										<div class="tag">Reprezentacia</div>
+										<div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+									</div>
+									<h1 class="h3 text-inverse hover-outline mb-6">
+										<a href="#"> Víťazstvo Zvolena smerom k semifinálovému derby </a>
+									</h1>
+									<p class="text-sm-regular text-inverse mb-6">
+										Ve středečním zápase se rozhodlo o dalších semifinalistech.
+										Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+										Košické Lvi, které se po deseti letech nedostaly do semifinále,
+										podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+										Semifinále tak opět přinese vzrušující městské derby.
+									</p>
+									<a class="TopStory-btn" href="#">Více</a>
+								</div>
+							</section>
+							<!-- Top story #3 -->
+							<section class="TopStory js-topStory" id="TP3">
+								<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" loading="lazy" width="150" height="100" alt="" />
+								<picture>
+									<source media="(max-width: 992px)" srcset="./img/blank.gif" />
+
+									<img class="TopStory-img js-topStory-img" srcset="https://picsum.photos/1920/1281" width="1920" height="1280" alt="" loading="lazy" />
+								</picture>
+								<div class="TopStory-content">
+									<div class="d-flex gap-4 align-items-center mb-6">
+										<div class="tag">Reprezentacia</div>
+										<div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+									</div>
+									<h1 class="h3 text-inverse hover-outline mb-6">
+										<a href="#"> Víťazstvo Detvy smerom k semifinálovému derby </a>
+									</h1>
+									<p class="text-sm-regular text-inverse mb-6">
+										Ve středečním zápase se rozhodlo o dalších semifinalistech.
+										Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+										Košické Lvi, které se po deseti letech nedostaly do semifinále,
+										podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+										Semifinále tak opět přinese vzrušující městské derby.
+									</p>
+									<a class="TopStory-btn" href="#">Více</a>
+								</div>
+							</section>
+							<!-- Top story #4 -->
+							<section class="TopStory js-topStory" id="TP4">
+								<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" alt="" />
+								<picture>
+									<source media="(max-width: 992px)" srcset="./img/blank.gif" />
+
+									<img class="TopStory-img js-topStory-img" srcset="https://picsum.photos/1920/1279" width="1920" height="1280" alt="" loading="lazy" />
+								</picture>
+								<div class="TopStory-content">
+									<div class="d-flex gap-4 align-items-center mb-6">
+										<div class="tag">Reprezentacia</div>
+										<div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+									</div>
+									<h1 class="h3 text-inverse hover-outline mb-6">
+										<a href="#"> Víťazstvo Trenčína smerom k semifinálovému derby </a>
+									</h1>
+									<p class="text-sm-regular text-inverse mb-6">
+										Ve středečním zápase se rozhodlo o dalších semifinalistech.
+										Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+										Košické Lvi, které se po deseti letech nedostaly do semifinále,
+										podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+										Semifinále tak opět přinese vzrušující městské derby.
+									</p>
+									<a class="TopStory-btn" href="#">Více</a>
+								</div>
+							</section>
+							<section class="TopStory js-topStory" id="TP5">
+								<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" alt="" />
+								<picture>
+									<source media="(max-width: 992px)" srcset="./img/blank.gif" />
+
+									<img class="TopStory-img js-topStory-img" srcset="https://picsum.photos/1922/1279" width="1920" height="1280" alt="" loading="lazy" />
+								</picture>
+								<div class="TopStory-content">
+									<div class="d-flex gap-4 align-items-center mb-6">
+										<div class="tag">Reprezentacia</div>
+										<div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+									</div>
+									<h1 class="h3 text-inverse hover-outline mb-6">
+										<a href="#"> Víťazstvo Košíc smerom k semifinálovému derby </a>
+									</h1>
+									<p class="text-sm-regular text-inverse mb-6">
+										Ve středečním zápase se rozhodlo o dalších semifinalistech.
+										Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+										Košické Lvi, které se po deseti letech nedostaly do semifinále,
+										podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+										Semifinále tak opět přinese vzrušující městské derby.
+									</p>
+									<a class="TopStory-btn" href="#">Více</a>
+								</div>
+							</section>
+						</div>
+
+						<!-- Top stories nav / Top stories mobile -->
+						<div class="TopStoriesSide NavTopStoriesContainer">
+							<nav class="NavTopStories" aria-label="Navigace - top články">
+								<ul>
+									<!-- Top story #1 - Active state by default -->
+									<li class="NavTopStories-item js-topStory-activate is-active" data-top-story="TP1">
+										<a href="#" class="NavTopStories-imgContainer">
+											<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" alt="" />
+											<img class="NavTopStories-img js-topStory-img" srcset="https://picsum.photos/375/250" width="375" height="250" alt="" loading="lazy" />
+										</a>
+										<div class="NavTopStories-textContainer">
+											<div class="d-flex gap-2 align-items-center mb-lg-4 mb-2 text-inverse">
+												<div class="text-xxs-regular">25. 04. 2025</div>
+												<div class="dot text-stroke">•</div>
+												<div class="text-xxs-regular">Reprezentacia</div>
+											</div>
+											<a href="#" class="NavTopStories-link h6 text-inverse">
+												Víťazstvo Michaloviec smerom k semifinálovému derby
+											</a>
+										</div>
+									</li>
+									<!-- Top story #2 -->
+									<li class="NavTopStories-item js-topStory-activate" data-top-story="TP2">
+										<a href="#" class="NavTopStories-imgContainer">
+											<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder" srcset="https://picsum.photos/150/100" width="150" height="100" alt="" />
+											<img class="NavTopStories-img js-topStory-img" srcset="https://picsum.photos/375/250" width="375" height="250" alt="" loading="lazy" />
+										</a>
+										<div class="NavTopStories-textContainer">
+											<div class="d-flex gap-2 align-items-center mb-lg-4 mb-2 text-inverse">
+												<div class="text-xxs-regular">25. 04. 2025</div>
+												<div class="dot text-stroke">•</div>
+												<div class="text-xxs-regular">Reprezentacia</div>
+											</div>
+											<a href="#" class="NavTopStories-link h6 text-inverse">
+												Víťazstvo Zvolena smerom k semifinálovému derby
+											</a>
+										</div>
+									</li>
+									<!-- Top story #3 -->
+									<li class="NavTopStories-item js-topStory-activate" data-top-story="TP3">
+										<a href="#" class="NavTopStories-imgContainer">
+											<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" loading="lazy" alt="" />
+											<img class="NavTopStories-img js-topStory-img" srcset="https://picsum.photos/375/250" width="375" height="250" alt="" loading="lazy" />
+										</a>
+										<div class="NavTopStories-textContainer">
+											<div class="d-flex gap-2 align-items-center mb-lg-4 mb-2 text-inverse">
+												<div class="text-xxs-regular">25. 04. 2025</div>
+												<div class="dot text-stroke">•</div>
+												<div class="text-xxs-regular">Reprezentacia</div>
+											</div>
+											<a href="#" class="NavTopStories-link h6 text-inverse">
+												Víťazstvo Detvy smerom k semifinálovému derby
+											</a>
+										</div>
+									</li>
+									<!-- Top story #4 -->
+									<li class="NavTopStories-item js-topStory-activate" data-top-story="TP4">
+										<a href="#" class="NavTopStories-imgContainer">
+											<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" loading="lazy" alt="" />
+											<img class="NavTopStories-img js-topStory-img" srcset="https://picsum.photos/375/250" width="375" height="250" alt="" loading="lazy" />
+										</a>
+										<div class="NavTopStories-textContainer">
+											<div class="d-flex gap-2 align-items-center mb-lg-4 mb-2 text-inverse">
+												<div class="text-xxs-regular">25. 04. 2025</div>
+												<div class="dot text-stroke">•</div>
+												<div class="text-xxs-regular">Reprezentacia</div>
+											</div>
+											<a href="#" class="NavTopStories-link h6 text-inverse">
+												Víťazstvo Trenčína smerom k semifinálovému derby
+											</a>
+										</div>
+									</li>
+									<!-- Top story #5 -->
+									<li class="NavTopStories-item js-topStory-activate" data-top-story="TP5">
+										<a href="#" class="NavTopStories-imgContainer">
+											<img class="TopStory-imgPlaceholder js-topStory-imgPlaceholder is-active" srcset="https://picsum.photos/150/100" width="150" height="100" loading="lazy" alt="" />
+											<img class="NavTopStories-img js-topStory-img" srcset="https://picsum.photos/375/250" width="375" height="250" alt="" loading="lazy" />
+										</a>
+										<div class="NavTopStories-textContainer">
+											<div class="d-flex gap-2 align-items-center mb-lg-4 mb-2 text-inverse">
+												<div class="text-xxs-regular">25. 04. 2025</div>
+												<div class="dot text-stroke">•</div>
+												<div class="text-xxs-regular">Reprezentacia</div>
+											</div>
+											<a href="#" class="NavTopStories-link h6 text-inverse">
+												Víťazstvo Košíc smerom k semifinálovému derby
+											</a>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hp-matchesSlider">
+				<div class="container">
+					<h6 class="title titleDot text-accent mb-lg-6 mb-4">ZÁPASY</h6>
+					<div class="swiper matchesSlider">
+						<button class="hp-matchesSlider__btn prev" aria-label="Previous">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 10l4 4 4-4" stroke="#FA5F00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg> </button>
+						<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">6</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/kosice.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBC Cesty Košice</div>
+												</div>
+												<div class="h6 text-accent font-title">2</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+												<div class="h6 text-accent font-title">7</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+												<div class="h6 text-accent font-title">3</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-primary w-100" href="#">Detail</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">HBK Nitrianski Rytieri</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/bystica.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">
+														HBK PROTEF Považská Bystrica
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">Plzeň Arena</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cardMatch">
+									<div>
+										<div class="d-flex align-items-center gap-2 text-xs-medium text-accent mb-4">
+											<img class="object-fit-contain" height="24" width="80" src="images/ico/logo.svg" alt="" />
+											<span class="dot text-stroke">•</span>
+											<div>1. kolo</div>
+										</div>
+										<div class="d-grid gap-2">
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/content/clubs/rytiri.jpg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Kryté Zimní Stadion Brno</div>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between align-items-center gap-2">
+												<div class="d-flex align-items-center gap-2">
+													<img class="object-fit-contain" width="24" height="24" src="images/ico/slovan-bratislava.svg" loading="lazy" alt="club logo" />
+													<div class="h6 font-title">Slovan Bratislava</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="pt-4 mt-7 border-top border-white">
+										<div class="d-flex align-items-center gap-2 text-xs-medium mb-4 flex-wrap">
+											<div>piatok</div>
+											<span class="dot text-stroke">•</span>
+											<div>05. 08. 2025</div>
+											<span class="dot text-stroke">•</span>
+											<div>18:00</div>
+										</div>
+										<div class="text-xs-medium text-secondary mb-4">
+											Arena Bratislava
+										</div>
+										<a class="btn-light w-100" href="#">Zobrazit více</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<button class="hp-matchesSlider__btn next" aria-label="Previous">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 10l4 4 4-4" stroke="#FA5F00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg> </button>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-primary pb-lg-14 pb-8 select-primary">
+				<div class="container">
+					<div class="row g-xl-10 g-8 justify-content-between pt-xl-20 pt-lg-16 pt-8">
+						<div class="col-xl-5 col-lg-6">
+							<div class="hp-news">
+								<h2 class="title titleDot text-inverse mb-lg-8 mb-6">Aktuality</h2>
+								<div class="newsItem">
+									<div class="font-title text-2xl-semibold text-inverse">
+										Novic v partě kohoutů: Václav Krliš
+									</div>
+									<div class="text-xxs-regular text-stroke">10. 10. 2024</div>
+									<p class="text-sm-regular text-inverse">
+										V sobotu dopoledne se táborské hokejové partě dostalo nové posily.
+										Máma Štěpánka a otec Václav přivedli do kohoutí družiny jméno,
+										které už v ní figuruje: Václav Krliš. Šťastným rodičům i Vencovi
+										juniorovi přejeme do dalšího života hodně štěstí, radosti a elánu.
+									</p>
+								</div>
+								<div class="newsItem">
+									<div class="font-title text-2xl-semibold text-inverse">
+										Novic v partě kohoutů: Václav Krliš
+									</div>
+									<div class="text-xxs-regular text-stroke">10. 10. 2024</div>
+									<p class="text-sm-regular text-inverse">
+										V sobotu dopoledne se táborské hokejové partě dostalo nové posily.
+										Máma Štěpánka a otec Václav přivedli do kohoutí družiny jméno,
+										které už v ní figuruje: Václav Krliš. Šťastným rodičům i Vencovi
+										juniorovi přejeme do dalšího života hodně štěstí, radosti a elánu.
+									</p>
+								</div>
+								<div class="newsItem">
+									<div class="font-title text-2xl-semibold text-inverse">
+										Novic v partě kohoutů: Václav Krliš
+									</div>
+									<div class="text-xxs-regular text-stroke">10. 10. 2024</div>
+									<p class="text-sm-regular text-inverse">
+										V sobotu dopoledne se táborské hokejové partě dostalo nové posily.
+										Máma Štěpánka a otec Václav přivedli do kohoutí družiny jméno,
+										které už v ní figuruje: Václav Krliš. Šťastným rodičům i Vencovi
+										juniorovi přejeme do dalšího života hodně štěstí, radosti a elánu.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-6">
+							<div class="d-flex gap-4 flex-wrap justify-content-between align-items-center mb-lg-7 mb-3">
+								<h2 class="title titleDot text-inverse w-auto">Rozhodnutie</h2>
+								<form class="submitForm position-relative">
+									<select class="js-select">
+										<option>Extraliga muži</option>
+										<option>Extraliga 1</option>
+										<option>Extraliga 2</option>
+										<option>Extraliga 3</option>
+									</select>
+								</form>
+							</div>
+							<div class="table-responsive">
+								<table class="hp-table">
+									<thead>
+										<colgroup>
+											<col style="width: 24px" />
+											<col />
+											<col style="width: 40px" />
+											<col style="width: 64px" />
+											<col style="width: 32px" />
+										</colgroup>
+										<tr>
+											<th></th>
+											<th class="text-xxs-regular text-inverse">Klub</th>
+											<th class="text-xxs-regular text-inverse">Z</th>
+											<th class="text-xxs-regular text-inverse">Skóre</th>
+											<th class="text-xxs-regular text-inverse">B</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+										<tr>
+											<td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+											<td class="text-sm-bold">
+												<a href="#" class="d-flex align-items-center gap-2 hover-outline text-inverse">
+													Slovan Bratislava
+												</a>
+											</td>
+											<td class="text-sm-regular text-inverse">22</td>
+											<td class="text-sm-regular text-inverse">177:110</td>
+											<td class="text-sm-regular text-inverse">102</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hp-posts">
+				<div class="container">
+					<div class="hp-posts__title pb-xxl-14 pb-xl-10 pb-md-8 pb-4">
+						Viete, ze <span class="text-stroke">...</span> ?
+					</div>
+					<div class="swiper hp-posts__slider mt-xl-16 mt-xl-12 mt-lg-10 mt-sm-6 mt-2 mt-md-8 pb-10">
+						<button class="hp-posts__btn prev" aria-label="Previous">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 10l4 4 4-4" stroke="#FA5F00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg> </button>
+						<button class="hp-posts__btn next" aria-label="Previous">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 10l4 4 4-4" stroke="#FA5F00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg> </button>
+						<ul role="list" class="swiper-wrapper infinite-scroll-swiper align-items-center">
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="hp-posts__item" href="#">
+									<img srcset="https://picsum.photos/660/440" alt="post" width="925" height="535" loading="lazy" />
+									<div class="hp-posts__item-content">
+										<div class="h3 text-inverse text-title mb-md-6 mb-sm-4">
+											Víťazstvo Michaloviec smerom k semifinálovému derby
+										</div>
+										<p class="text-sm-regular text-inverse d-sm-block d-none">
+											Ve středečním zápase se rozhodlo o dalších semifinalistech.
+											Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+											Košické Lvi, které se po deseti letech nedostaly do semifinále,
+											podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+											Semifinále tak opět přinese vzrušující městské derby.
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<section class="py-lg-14 py-sm-8 py-6">
+				<div class="container">
+					<h6 class="title titleDot text-accent mb-lg-6 mb-4">Partneri</h6>
+					<div class="swiper partnersSlider">
+						<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-3.svg" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-2.svg" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-1.svg" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-9.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-10.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-11.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-12.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-13.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+									<img src="images/content/partners/p-14.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="container">
 				<div class="row g-10 justify-content-between">

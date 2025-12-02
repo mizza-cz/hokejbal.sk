@@ -36,6 +36,16 @@
     line-height: 42px;
   }
 }
+.h3,
+.o-content h3 {
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 700;
+  @include media-breakpoint-down(lg) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
 .h4,
 .o-content h4 {

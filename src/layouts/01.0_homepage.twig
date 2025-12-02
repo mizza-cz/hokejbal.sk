@@ -1,2 +1,48 @@
 {% extends "@components/base/base.twig" %} {% set use_alt_header = false %} {%
-set title = "01.0_homepage" %} {% block main %} Hello, World! {% endblock %}
+set title = "01.0_homepage" %} {% block main %} {% include
+"@components/topstory/topstory.twig" %} {% include
+"@components/hp-matchesSlider/hp-matchesSlider.twig" %}
+
+<div class="bg-primary pb-lg-14 pb-8 select-primary">
+  <div class="container">
+    <div class="row g-xl-10 g-8 justify-content-between pt-xl-20 pt-lg-16 pt-8">
+      <div class="col-xl-5 col-lg-6">
+        <div class="hp-news">
+          <h2 class="title titleDot text-inverse mb-lg-8 mb-6">Aktuality</h2>
+          {% for i in 1..3 %}
+          <div class="newsItem">
+            <div class="font-title text-2xl-semibold text-inverse">
+              Novic v partě kohoutů: Václav Krliš
+            </div>
+            <div class="text-xxs-regular text-stroke">10. 10. 2024</div>
+            <p class="text-sm-regular text-inverse">
+              V sobotu dopoledne se táborské hokejové partě dostalo nové posily.
+              Máma Štěpánka a otec Václav přivedli do kohoutí družiny jméno,
+              které už v ní figuruje: Václav Krliš. Šťastným rodičům i Vencovi
+              juniorovi přejeme do dalšího života hodně štěstí, radosti a elánu.
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6">
+        <div
+          class="d-flex gap-4 flex-wrap justify-content-between align-items-center mb-lg-7 mb-3"
+        >
+          <h2 class="title titleDot text-inverse w-auto">Rozhodnutie</h2>
+          <form class="submitForm position-relative">
+            <select class="js-select">
+              <option>Extraliga muži</option>
+              <option>Extraliga 1</option>
+              <option>Extraliga 2</option>
+              <option>Extraliga 3</option>
+            </select>
+          </form>
+        </div>
+        {% include "@components/hp-table/hp-table.twig" %}
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/hp-posts/hp-posts.twig" %} {% include
+"@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

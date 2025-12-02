@@ -1,0 +1,38 @@
+<div class="table-responsive">
+  <table class="hp-table">
+    <thead>
+      <colgroup>
+        <col style="width: 24px" />
+        <col />
+        <col style="width: 40px" />
+        <col style="width: 64px" />
+        <col style="width: 32px" />
+      </colgroup>
+      <tr>
+        <th></th>
+        <th class="text-xxs-regular text-inverse">Klub</th>
+        <th class="text-xxs-regular text-inverse">Z</th>
+        <th class="text-xxs-regular text-inverse">Skóre</th>
+        <th class="text-xxs-regular text-inverse">B</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in 1..10 %}
+      <tr>
+        <td class="text-xl-semibold font-italic font-title text-stroke">1.</td>
+        <td class="text-sm-bold">
+          <a
+            href="#"
+            class="d-flex align-items-center gap-2 hover-outline text-inverse"
+          >
+            Slovan Bratislava
+          </a>
+        </td>
+        <td class="text-sm-regular text-inverse">22</td>
+        <td class="text-sm-regular text-inverse">177:110</td>
+        <td class="text-sm-regular text-inverse">102</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
