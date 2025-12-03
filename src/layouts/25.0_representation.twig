@@ -1,0 +1,138 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "25.0_representation" %} {% block main %}
+
+<div class="mb-lg-10 mb-4">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Reprezentace
+          </li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Reprezentace</h1>
+    </div>
+  </div>
+</div>
+
+{% include "@components/posts/posts.twig" %}
+
+<div class="mt-lg-10 mt-8">
+  <div class="container">
+    <div
+      class="d-flex align-items-end justify-content-between gap-4 flex-wrap mb-lg-6 mb-4"
+    >
+      <h2 class="title titleDot text-accent w-sm-auto w-100">Týmy</h2>
+      <form class="submitForm w-sm-auto w-100">
+        <select class="js-select" id="year" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+    <div class="row g-6 mb-lg-10 mb-8">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">A-tým</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">B-tým</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">U19</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">U18</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">U15</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div
+          class="bg-secondary p-6 rounded-3 d-grid h-100 gap-lg-14 gap-8 text-accent"
+        >
+          <div class="h6 font-title">Přípravka</div>
+          <a href="#" class="text-sm-regular hover-outline"> Detail týmu </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-flex align-items-end justify-content-between gap-4 flex-wrap mb-lg-6 mb-4"
+    >
+      <h2 class="title titleDot text-accent w-sm-auto w-100">Akce</h2>
+      <form class="submitForm w-sm-auto w-100">
+        <select class="js-select" id="year2" name="year">
+          <option>2025/26</option>
+          <option>2024/25</option>
+          <option>2023/24</option>
+          <option>2022/23</option>
+          <option>2021/22</option>
+        </select>
+      </form>
+    </div>
+    <div class="row g-6">
+      {% for i in 1..8 %}
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="bg-secondary p-6 rounded-3 d-grid h-100 gap-8">
+          <div class="d-grid gap-6">
+            <div class="h6 font-title text-accent">A-tým</div>
+            <div class="d-grid gap-3">
+              <div class="h5 font-title">MS Praha</div>
+              <p class="text-sm-regular text-secondary">
+                20. 10. 2024 – 3. 11. 2024
+              </p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="text-sm-regular hover-outline text-accent d-flex align-items-center gap-2"
+          >
+            Detail týmu
+            <img
+              class="object-fit-contain"
+              src="images/ico/arrow-right.svg"
+              width="24"
+              height="24"
+              alt="arrow"
+            />
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% include "@components/matchesSlider/matchesSlider.twig" %} {% endblock %}
