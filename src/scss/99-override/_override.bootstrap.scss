@@ -85,5 +85,12 @@
 .slim-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+.modal-dialog {
+  max-width: 1440px !important;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+// .modal-content{
 
+// }
 /*! purgecss end ignore */

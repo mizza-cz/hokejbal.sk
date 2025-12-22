@@ -1,0 +1,191 @@
+{% extends "@components/base/base.twig" %} {% set use_alt_header = true %} {%
+set title = "27.0_photogallery" %} {% block main %}
+
+<div class="mb-lg-20 mb-10">
+  <div class="container">
+    <div class="headerPage">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Galeria</li>
+        </ol>
+      </nav>
+
+      <h1 class="h2 titleDot text-center">Galeria</h1>
+    </div>
+    <div class="container-sm p-0">
+      <form class="search my-lg-8 mt-6 mb-4">
+        <button>
+          <img src="images/ico/search-secondary.svg" alt="search button" />
+        </button>
+        <input
+          class="bg-secondary border-inverse text-secondary"
+          placeholder="Čo hledáte?"
+          type="text"
+          name="search"
+        />
+      </form>
+    </div>
+    <div
+      class="d-flex mb-lg-8 mb-6 border-bottom overflow-scroll slim-scroll pb-0"
+    >
+      <a
+        class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="#"
+      >
+        Vše
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="#"
+      >
+        Turnaje
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="#"
+      >
+        Sutaže
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="#"
+      >
+        Reprezentacia
+      </a>
+      <a
+        class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block"
+        href="#"
+      >
+        Mládež
+      </a>
+    </div>
+    <div class="photogallery-section">
+      <div
+        class="modal fade"
+        id="videoModal"
+        tabindex="-1"
+        aria-labelledby="videoModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body o-content">
+              <iframe
+                width="1200"
+                height="640"
+                src="https://www.youtube.com/embed/_t9Hp0B5HA0?si=bKhOziDdHD2EcXls"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2">
+        {% for i in 1..6 %}
+        <div class="col-lg-4 col-md-6">
+          <a
+            class="postCard-high"
+            href="#"
+            data-source="/hokejbal.sk/build/ajax-gallery.json"
+            data-gallery-id="1"
+          >
+            <img
+              srcset="https://picsum.photos/400/600"
+              alt="post"
+              width="400"
+              height="600"
+              loading="lazy"
+            />
+            <div class="postCard-md__content">
+              <div class="d-flex gap-4 align-items-center mb-lg-6 mb-4">
+                <div class="tag">Reprezentacia</div>
+                <div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+              </div>
+              <h4 class="title mb-lg-4 mb-3">
+                Víťazstvo Michaloviec smerom k semifinálovému derby
+              </h4>
+              <p class="text-sm-regular">
+                Ve středečním zápase se rozhodlo o dalších semifinalistech.
+                Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+                Košické Lvi, které se po deseti letech nedostaly do semifinále,
+                podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+                Semifinále tak opět přinese vzrušující městské derby.
+              </p>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      <hr class="my-lg-16 my-10" />
+
+      <div class="row g-lg-6 g-4">
+        {% for i in 1..2 %}
+        <div class="col-lg-6">
+          {% include "@components/postCard/postCard-video.twig" %}
+        </div>
+        {% endfor %}
+      </div>
+      <hr class="my-lg-16 my-10" />
+
+      <div class="row g-2">
+        {% for i in 1..6 %}
+        <div class="col-lg-4 col-md-6">
+          <a
+            class="postCard-high"
+            href="#"
+            data-source="/hokejbal.sk/build/ajax-gallery.json"
+            data-gallery-id="1"
+          >
+            <img
+              srcset="https://picsum.photos/400/600"
+              alt="post"
+              width="400"
+              height="600"
+              loading="lazy"
+            />
+            <div class="postCard-md__content">
+              <div class="d-flex gap-4 align-items-center mb-lg-6 mb-4">
+                <div class="tag">Reprezentacia</div>
+                <div class="text-xxs-regular text-inverse">25. 04. 2025</div>
+              </div>
+              <h4 class="title mb-lg-4 mb-3">
+                Víťazstvo Michaloviec smerom k semifinálovému derby
+              </h4>
+              <p class="text-sm-regular">
+                Ve středečním zápase se rozhodlo o dalších semifinalistech.
+                Potvrdil svou sílu a potřetí za sebou porazil tým z Bratislavy.
+                Košické Lvi, které se po deseti letech nedostaly do semifinále,
+                podlehly KP TANY Brno v sérii 0:3, což mnohé překvapilo.
+                Semifinále tak opět přinese vzrušující městské derby.
+              </p>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+
+      <hr class="my-lg-16 my-10" />
+
+      <div class="row g-lg-6 g-4 mb-lg-16 mb-10">
+        {% for i in 1..2 %}
+        <div class="col-lg-6">
+          {% include "@components/postCard/postCard-video.twig" %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="text-center">
+        <button class="btn-primary">Nacist dalsi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
