@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>18.0_contacts - Hokejbal.sk</title>
+	<title>28.0_map - Hokejbal.sk</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -170,179 +170,186 @@
 								<li class="breadcrumb-item">
 									<a href="#">Home</a>
 								</li>
-
-								<li class="breadcrumb-item active" aria-current="page">Kontakty</li>
+								<li class="breadcrumb-item active" aria-current="page">Mapa klubu</li>
 							</ol>
 						</nav>
 
-						<h1 class="h2 titleDot text-center">Kontakty</h1>
+						<h1 class="h2 titleDot text-center">Mapa klubu</h1>
 					</div>
-					<div class="row g-6 mt-lg-2">
-						<div class="col-lg-4">
-							<div class="contactCard">
-								<img src="images/content/fame.png" alt="photo" loading="lazy" />
-								<div class="contactCard__content">
-									<div class="d-grid gap-2">
-										<div class="text-2xl-bold">Josef Kutěj</div>
-										<div class="text-secondary text-lg-regular">
-											Jednatel / výkonný ředitel
-										</div>
-										<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-											<a href="tel:+421739169479">+421 739 169 479</a>
-											<span class="dot text-stroke">•</span>
-											<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="container-sm p-0">
+						<form class="search mt-6 mb-4">
+							<button>
+								<img src="images/ico/search-secondary.svg" alt="search button" />
+							</button>
+							<input id="search-input" class="bg-secondary border-inverse text-secondary" placeholder="Čo hledáte?" type="text" name="search" />
+						</form>
+						<div class="search__location">
+							<button id="find-me" type="button">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path clip-rule="evenodd" d="M13.482 13.482l-1.145 2.863a.591.591 0 01-1.105-.018L8.753 9.511a.591.591 0 01.758-.758l6.816 2.478c.51.186.522.903.018 1.105l-2.863 1.146z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<circle cx="12" cy="12" r="9" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg> Použít aktuální polohu
+							</button>
+							<p id="status"></p>
+							<a id="map-link" target="_blank"></a>
 						</div>
+					</div>
+					<div class="d-flex mb-4 border-bottom overflow-scroll slim-scroll pb-0">
+						<a class="text-accent border-bottom border-3 border-primary font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block" href="#">
+							Muži
+						</a>
 
-						<div class="col-lg-4">
-							<div class="contactCard">
-								<img src="images/content/fame.png" alt="photo" loading="lazy" />
-								<div class="contactCard__content">
-									<div class="d-grid gap-2">
-										<div class="text-2xl-bold">Josef Kutěj</div>
-										<div class="text-secondary text-lg-regular">
-											Jednatel / výkonný ředitel
+						<a class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block" href="#">
+							Mládež
+						</a>
+						<a class="font-title text-lg-semibold font-italic px-lg-6 px-4 py-lg-4 py-3 hover-outline d-block" href="#">
+							Městské ligy
+						</a>
+					</div>
+					<div class="row g-6 flex-wrap-reverse">
+						<div class="col-xl-4">
+							<div class="d-grid gap-2">
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/ico/slovan-bratislava.svg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">
+													HC Slovan Bratislava
+												</div>
+												<p class="text-sm-medium text-secondary">
+													Odbojárov 9, 831 04, Bratislava
+												</p>
+											</div>
 										</div>
-										<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-											<a href="tel:+421739169479">+421 739 169 479</a>
-											<span class="dot text-stroke">•</span>
-											<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
 									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="contactCard">
-								<img src="images/content/fame.png" alt="photo" loading="lazy" />
-								<div class="contactCard__content">
-									<div class="d-grid gap-2">
-										<div class="text-2xl-bold">Josef Kutěj</div>
-										<div class="text-secondary text-lg-regular">
-											Jednatel / výkonný ředitel
-										</div>
-										<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-											<a href="tel:+421739169479">+421 739 169 479</a>
-											<span class="dot text-stroke">•</span>
-											<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Mládež
 										</div>
 									</div>
-								</div>
+								</a>
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/content/clubs/bystica.jpg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">FC Barcelona</div>
+												<p class="text-sm-medium text-secondary">
+													Carrer d'Aristides Maillol, 12, 08028, Barcelona
+												</p>
+											</div>
+										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
+									</div>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Juvenil
+										</div>
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Senior
+										</div>
+									</div>
+								</a>
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/content/clubs/rytiri.jpg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">Bayern Munich</div>
+												<p class="text-sm-medium text-secondary">
+													Werner-Heisenberg-Allee 25, 80939, München
+												</p>
+											</div>
+										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
+									</div>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Kadetten
+										</div>
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Profesionální
+										</div>
+									</div>
+								</a>
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/ico/slovan-bratislava.svg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">
+													HC Slovan Bratislava
+												</div>
+												<p class="text-sm-medium text-secondary">
+													Odbojárov 9, 831 04, Bratislava
+												</p>
+											</div>
+										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
+									</div>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Mládež
+										</div>
+									</div>
+								</a>
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/content/clubs/bystica.jpg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">FC Barcelona</div>
+												<p class="text-sm-medium text-secondary">
+													Carrer d'Aristides Maillol, 12, 08028, Barcelona
+												</p>
+											</div>
+										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
+									</div>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Juvenil
+										</div>
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Senior
+										</div>
+									</div>
+								</a>
+								<a href="#" class="mapItem">
+									<div class="d-flex justify-content-between gap-lg-4">
+										<div class="d-flex gap-4 align-items-center flex-wrap">
+											<img src="images/content/clubs/rytiri.jpg" width="32" height="32" class="objec-fit-contain" alt="" />
+											<div class="d-grid">
+												<div class="text-xl-semibold font-title">Bayern Munich</div>
+												<p class="text-sm-medium text-secondary">
+													Werner-Heisenberg-Allee 25, 80939, München
+												</p>
+											</div>
+										</div>
+										<img class="mapItem__icon" src="images/ico/chevron-down.svg" loading="lazy" alt="arrow" />
+									</div>
+									<div class="d-flex align-items-center gap-2 text-xxs-bold text-secondary mt-3">
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Kadetten
+										</div>
+										<div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+											Profesionální
+										</div>
+									</div>
+								</a>
 							</div>
 						</div>
-
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-							<div class="bg-secondary rounded-16 p-6">
-								<div class="d-grid gap-2">
-									<div class="text-2xl-bold">Josef Kutěj</div>
-									<div class="text-secondary text-lg-regular">
-										Jednatel / výkonný ředitel
-									</div>
-									<div class="d-flex flex-wrap align-items-center gap-2 text-lg-regular text-accent hover-outline">
-										<a href="tel:+421739169479">+421 739 169 479</a>
-										<span class="dot text-stroke">•</span>
-										<a href="mailto:kutej@hokejbal.sk">kutej@hokejbal.sk</a>
-									</div>
-								</div>
+						<div class="col-xl-8">
+							<div class="map-wrapper">
+								<div class="map" id="map-canvas"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</main>
 		<footer class="footer">
 			<div class="container">

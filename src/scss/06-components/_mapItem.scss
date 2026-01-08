@@ -1,0 +1,16 @@
+.mapItem {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+  &:hover {
+    border-color: var(--color-accent);
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transform: rotate(-90deg);
+  }
+}

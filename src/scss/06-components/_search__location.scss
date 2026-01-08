@@ -1,0 +1,22 @@
+.search__location {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

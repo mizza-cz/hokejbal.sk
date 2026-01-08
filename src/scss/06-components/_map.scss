@@ -1,0 +1,29 @@
+#map-canvas {
+  border-radius: 16px;
+  width: 100%;
+  aspect-ratio: 920 / 755;
+  height: auto; // ключевое
+  min-height: 320px;
+}
+.map-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.map {
+  width: 100%;
+  iframe {
+    display: block;
+    width: 100%;
+  }
+}
+div[title=""][role="img"] {
+  width: 25px !important;
+  height: 25px !important;
+  background-size: cover;
+  border-radius: 100%;
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
