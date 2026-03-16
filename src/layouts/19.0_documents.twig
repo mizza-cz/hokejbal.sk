@@ -20,7 +20,7 @@ set title = "19.0_documents" %} {% block main %}
     <div class="container-sm p-0">
       <div class="pb-3 border-bottom mb-6">
         <form
-          class="d-flex flex-wrap align-items-center gap-4 justify-content-center mb-lg-7 mb-4"
+          class="d-flex flex-wrap align-items-center gap-4 justify-content-center mb-lg-7 mb-4 submitForm"
         >
           <div class="search m-0 mw-100">
             <button>
@@ -43,7 +43,7 @@ set title = "19.0_documents" %} {% block main %}
             </select>
           </div>
         </form>
-        <a class="active sort" href="#">
+        <button class="active sort" data-sort="asc">
           Abecedně
           <img
             class="object-fit-contain"
@@ -52,7 +52,7 @@ set title = "19.0_documents" %} {% block main %}
             height="24"
             alt="chevron"
           />
-        </a>
+        </button>
       </div>
       <div class="row g-6">
         {% for i in 1..6 %}
@@ -201,6 +201,42 @@ set title = "19.0_documents" %} {% block main %}
           </div>
         </div>
         {% endfor %}
+        <div class="col-md-4 col-sm-6">
+          <div class="docsItem">
+            <div
+              class="d-flex align-items-center gap-2 text-xxs-regular text-secondary mb-4"
+            >
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Nově pridano
+              </div>
+              <div class="border-inverse py-2 px-3 rounded-56 bg-secondary">
+                Smlouvy
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a class="d-block" href="images/ico/file.svg" download>
+                <img
+                  src="images/ico/file.svg"
+                  width="20 "
+                  height="20"
+                  class="objec-fit-contain"
+                  alt="icon"
+                  loading="lazy"
+                />
+              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="images/ico/file.svg"
+                  download
+                  class="text-sm-medium hover-outline"
+                >
+                  abcsd Smlouva o školení zaměstnanců.pdf
+                </a>
+                <div class="text-secondary text-xxs-regular">12. 2. 2010</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
