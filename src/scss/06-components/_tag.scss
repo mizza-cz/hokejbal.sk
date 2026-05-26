@@ -6,23 +6,4 @@
   position: relative;
   border-radius: 56px;
   padding: 8px 12px;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 0.5px;
-    background: linear-gradient(
-      109.13deg,
-      #feffea 0.88%,
-      rgba(254, 255, 234, 0.1) 41.91%,
-      rgba(254, 255, 234, 0.2) 69.44%,
-      #feffea 113.16%
-    );
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-  }
 }
