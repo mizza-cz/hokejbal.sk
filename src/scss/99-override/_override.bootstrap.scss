@@ -90,7 +90,15 @@
   width: 100%;
   aspect-ratio: 16/9;
 }
-// .modal-content{
-
-// }
+ 
+[aria-labelledby^="modalVideoLabel"] {
+  .modal-dialog {
+    max-width: 1200px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
 /*! purgecss end ignore */

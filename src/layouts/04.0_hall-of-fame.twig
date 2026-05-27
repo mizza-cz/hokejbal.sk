@@ -49,7 +49,12 @@ set title = "04.0_hall-of-fame" %} {% block main %}
     <div class="row g-6">
       {% for i in 1..12 %}
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <a class="cardFame" href="#">
+        <a
+          class="cardFame"
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#fameModal"
+        >
           <img
             src="images/content/fame.png"
             width="330"
@@ -74,5 +79,4 @@ set title = "04.0_hall-of-fame" %} {% block main %}
     </div>
   </div>
 </div>
-
-{% endblock %}
+{% include "@components/fameModal/fameModal.twig" %} {% endblock %}
