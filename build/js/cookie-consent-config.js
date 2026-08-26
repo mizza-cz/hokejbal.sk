@@ -1,45 +1,63 @@
 window.cookieConsentSettings = {
-  current_lang: "cs",
+  current_lang: "sk",
+
   autoclear_cookies: true, // default: false
+
   theme_css: "css/cookie-consent.css", // 🚨 replace with a valid path
+
   page_scripts: true, // default: false
+
   languages: {
-    cs: {
+    sk: {
       consent_modal: {
-        title: "Tato webová stránka používá cookies",
+        title: "Táto webová stránka používa cookies",
+
         description:
-          'Tyto webové stránky používají k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookies. Některé z nich jsou k fungování stránky nezbytné, ale o některých můžete rozhodnout sami. Více o používání souborů cookies se dozvíte níže. Můžete je povolit všechny, jednotlivě vybrat nebo všechny odmítnout. Více informací získáte kdykoliv na stránce Zásady používání souborů cookies. <button type="button" data-cc="c-settings" class="cc-link">Nastavení cookies</button>',
+          'Tieto webové stránky používajú súbory cookies na poskytovanie služieb, personalizáciu reklám a analýzu návštevnosti. Niektoré z nich sú nevyhnutné na fungovanie stránky, o niektorých však môžete rozhodnúť sami. Viac o používaní súborov cookies sa dozviete nižšie. Môžete povoliť všetky, vybrať jednotlivé alebo všetky odmietnuť. Viac informácií získate kedykoľvek na stránke Zásady používania súborov cookies. <button type="button" data-cc="c-settings" class="cc-link">Nastavenie cookies</button>',
+
         primary_btn: {
-          text: "Přijmout vše",
+          text: "Prijať všetko",
           role: "accept_all", // 'accept_selected' or 'accept_all'
         },
+
         secondary_btn: {
-          text: "Pouze nezbytné",
+          text: "Iba nevyhnutné",
           role: "accept_necessary", // 'settings' or 'accept_necessary'
         },
       },
+
       settings_modal: {
-        title: "Nastavení cookies",
-        save_settings_btn: "Uložit moje volby",
-        accept_all_btn: "Přijmout vše",
-        reject_all_btn: "Odmítnout vše",
-        close_btn_label: "Zavřít",
+        title: "Nastavenie cookies",
+
+        save_settings_btn: "Uložiť moje voľby",
+
+        accept_all_btn: "Prijať všetko",
+
+        reject_all_btn: "Odmietnuť všetko",
+
+        close_btn_label: "Zavrieť",
+
         cookie_table_headers: [
-          { col1: "Název" },
+          { col1: "Názov" },
           { col2: "Doména" },
-          { col3: "Platnost do" },
+          { col3: "Platnosť do" },
           { col4: "Popis" },
         ],
+
         blocks: [
           {
-            title: "Používaní cookies",
+            title: "Používanie cookies",
+
             description:
-              "Tyto webové stránky používají k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookies. Některé z nich jsou k fungování stránky nezbytné, ale o některých můžete rozhodnout sami.",
+              "Tieto webové stránky používajú súbory cookies na poskytovanie služieb, personalizáciu reklám a analýzu návštevnosti. Niektoré z nich sú nevyhnutné na fungovanie stránky, o niektorých však môžete rozhodnúť sami.",
           },
+
           {
-            title: "Funkční cookies – vždy povoleno",
+            title: "Funkčné cookies – vždy povolené",
+
             description:
-              "Tyto soubory cookie jsou nutné pro základní funkce stránky, a jsou proto vždy povolené.",
+              "Tieto súbory cookies sú nevyhnutné pre základné funkcie stránky, a preto sú vždy povolené.",
+
             toggle: {
               value: "necessary",
               enabled: true,
@@ -48,45 +66,56 @@ window.cookieConsentSettings = {
           },
 
           {
-            title: "Statistické cookies",
+            title: "Štatistické cookies",
+
             description:
-              "Statistické cookies umožŘují majitelům webových stránek sledovat návštěvnost webových stránek. Anonymně sbírají a sdělují informace, které pomáhají k vylepšování obsahu stránek.",
+              "Štatistické cookies umožňujú majiteľom webových stránok sledovať návštevnosť webových stránok. Anonymne zhromažďujú a poskytujú informácie, ktoré pomáhajú zlepšovať obsah stránok.",
+
             toggle: {
               value: "analytics", // your cookie category
               enabled: false,
               readonly: false,
             },
-            /*cookie_table: [
-								// list of all expected cookies
-								{
-									col1: '^_ga', // match all cookies starting with "_ga"
-									col2: 'google.com',
-									col3: '2 years',
-									col4: 'description ...',
-									is_regex: true,
-								},
-								{
-									col1: '_gid',
-									col2: 'google.com',
-									col3: '1 day',
-									col4: 'description ...',
-								},
-							],*/
+
+            /*
+            cookie_table: [
+              // list of all expected cookies
+              {
+                col1: '^_ga', // match all cookies starting with "_ga"
+                col2: 'google.com',
+                col3: '2 years',
+                col4: 'description ...',
+                is_regex: true,
+              },
+              {
+                col1: '_gid',
+                col2: 'google.com',
+                col3: '1 day',
+                col4: 'description ...',
+              },
+            ],
+            */
           },
+
           {
             title: "Marketingové cookies",
+
             description:
-              "Marketingové cookies jsou používány pro sledování návštěvníků na webových stránkách. Záměrem je zobrazit reklamu, která je relevantní a zajímavá pro jednotlivého uživatele a tímto hodnotnější pro vydavatele a inzerenty třetích stran.",
+              "Marketingové cookies sa používajú na sledovanie návštevníkov na webových stránkach. Ich cieľom je zobrazovať reklamu, ktorá je relevantná a zaujímavá pre jednotlivého používateľa, a tým hodnotnejšia pre vydavateľov a inzerentov tretích strán.",
+
             toggle: {
               value: "targeting",
               enabled: false,
               readonly: false,
             },
           },
+
           {
-            title: "Sociální média",
+            title: "Sociálne médiá",
+
             description:
-              "Se souhlasem cookies sociálních médií se můžete připojit k vašim sociálním sítím a prostřednictvím nich sdílet obsah z naší webové stránky. Při vypnutí se nebude zobrazovat obsah ze sociálních sítí (Facebook, Twitter, Youtube a další).",
+              "So súhlasom s cookies sociálnych médií sa môžete pripojiť k svojim sociálnym sieťam a prostredníctvom nich zdieľať obsah z našej webovej stránky. Pri ich vypnutí sa nebude zobrazovať obsah zo sociálnych sietí (Facebook, Twitter, YouTube a ďalšie).",
+
             toggle: {
               value: "social",
               enabled: false,
