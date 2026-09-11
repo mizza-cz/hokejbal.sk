@@ -18,7 +18,12 @@
       >
         {% for i in 1..6 %}
         <li class="swiper-slide">
-          <a class="hp-posts__item" href="#">
+          <a
+            class="hp-posts__item"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#postModal"
+          >
             <img
               srcset="https://picsum.photos/660/440"
               alt="post"
@@ -45,3 +50,5 @@
     </div>
   </div>
 </div>
+
+{% include "@components/postModal/postModal.twig" %}
