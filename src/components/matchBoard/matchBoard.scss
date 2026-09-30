@@ -78,6 +78,8 @@
     line-height: 62px;
     font-family: var(--font-display);
     min-width: 120px;
+    width: fit-content;
+    flex-shrink: 0;
     text-align: center;
     justify-content: center;
     display: flex;
